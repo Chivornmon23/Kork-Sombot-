@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=supreme@400&f[]=technor@600&f[]=archivo@400&f[]=clash-display@600&f[]=clash-grotesk@400,600&display=swap" rel="stylesheet">
+    <title>Kork Sombot</title>
+</head>
+<body>
+    <header>
+         <nav class="navbar">
+            <div class="logo">
+                <div class="logo-container">
+                     <i class="fa-solid fa-ticket"></i>
+                </div>
+                <h1>KORK SOMBOT</h1>
+            </div>
+
+            <div>
+                <ul class="nav-links">
+                    <div class="nav-links item">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="#">Workshops</a></li>
+                        <li><a href="#">Concerts</a></li>
+                    </div>
+                    <a href="#" class="btn-outline">Create Event</a>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="#Login">Login</a>
+                <a href="#Signup" class="btn-bg">Sign Up</a>
+                <div class="user-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Hero-->
+    <section class="create-hero">
+        <p class = "subtitle">
+             ORGANIZER DASHBOARD
+        </p>
+       <h1>Create Your Event</h1>
+       <p class="description">
+        Fill in the details below to publish your event and start selling tickets.
+       </p>
+    </section>
+    <!--Form-->
+    <main class=" create event">
+        <section class="progress">
+            <div class=" step active">
+                <div class="circle">2</div>
+                <p>date & Venue</p>
+            </div>
+
+            <div class="line"></div>
+
+            <diiv class="step">
+                <div class="circle">3</div>
+                <p>Tickets</p>
+            </diiv>
+
+            <div class="line"></div>
+
+            <div class="step">
+                <div class="circle">4</div>
+                <p>Publish</p>
+            </div>
+
+        </section>
+
+        <!--Card-->
+        <section class="form-card">
+            <h2>Basic Information</h2>
+
+            <form>
+                <div class="form-group">
+                    <label>Event Title *</label>
+
+                    <input>
+                    type="text"
+                    placeholder="e.g. Angkor Sunrise Jazz Night">
+                </div>
+
+                <div class="form-group">
+                    <label>Category *</label>
+                    <select>
+                        <option>Selection a category</option>
+                        <option>Concert</option>
+                        <option>Workshop</option>
+                        <option>Festival</option>  <!--for now we mostly focus on concerts and workshops-->
+                
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>description *</label>
+
+                    <textarea
+                        rows="6"
+                        placeholder="Describe your event...."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Event Banner</label>
+                    <input type="file">
+                </div>
+
+                <button type="submit" class="next-btn">
+
+                    Continue
+
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </section>
+    </main>
+
+</body>
