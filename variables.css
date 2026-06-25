@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Black+Ops+One&family=Bowlby+One+SC&family=Chango&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Snowburst+One&display=swap');
+
 :root {
     /* color */
-  --primary-red: #e31b34;
-  --bg-dark: #0a0a0a;
+  --primary-red: #C8102E;
+  --bg-dark: #0D0D0D;
   --text-white: #ffffff;
   --text-gray: #b3b3b3;
   --surface-dark: #1a1a1a;
   --hover-gray: #eec4c42c;
 
     /* font family */
+  
   --font-main: 'Clash Grotesk', sans-serif;
+  --primary-font: "Bowlby One SC", sans-serif;
+  --secondary-font: "Aladin", system-ui;
 }

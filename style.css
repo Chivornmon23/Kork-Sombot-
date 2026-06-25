@@ -1,9 +1,9 @@
 @import url(./variables.css);
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-main);
 }
 .navbar{
     display: flex;
@@ -11,6 +11,7 @@
     background-color: var(--bg-dark);
     color: var(--text-white);
     padding: 10px 15px;
+    font-family: var(--font-main);
 }
 .logo{
     display: flex;
@@ -76,11 +77,53 @@
     color: var(--primary-red);
 }
 .btn-outline{
-
     padding: 8px 14px;
     border: 2px solid var(--primary-red);
     border-radius: 8px;
 }
-.btn-outline:hover{
+.btn-outline:hover {
     background-color: var(--primary-red);
+    color: var(--text-white);
+}
+
+/* Hero section */
+body{
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: "Aladin", system-ui;
+}
+.wrapper{
+    padding: 80px;
+    width: 100%;  
+}
+.ticket{
+    background-color: aqua;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    width: 1200px;
+}
+.tag{
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border: 1px solid var(--primary-red);
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-family: var(--font-main);
+}
+.wrapper h1{
+    font-size: 6rem;
+    font-family: "Aladin", system-ui;
+}
+.wrapper .highlight{
+    color: var(--primary-red);
+}
+.wrapper .description{
+    color: var(--text-gray);
+    font-size: 1.2rem;
+    margin-top: 20px;
+    max-width: 800px;
+    font-family: var(--font-main);
 }
