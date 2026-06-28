@@ -21,12 +21,12 @@
             <div>
                 <ul class="nav-links">
                     <div class="nav-links item">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="home..html">Home</a></li>
                         <li><a href="events.html">Events</a></li>
                         <li><a href="#">Workshops</a></li>
                         <li><a href="#">Concerts</a></li>
                     </div>
-                    <a href="#" class="btn-outline">Create Event</a>
+                    <a href="/create_events.html" class="btn-outline">Create Event</a>
                 </ul>
             </div>
 
@@ -52,35 +52,6 @@
     </section>
     <!--Form-->
     <main class=" create-event">
-        <section class="progress">
-
-            <div class="step active" data-step="1">
-                <div class="circle">1</div>
-                <p>Basic Info</p>
-            </div>
-
-            <div class="line"></div>
-
-            <div class=" step" data-step="2">
-                <div class="circle">2</div>
-                <p>date & Venue</p>
-            </div>
-
-            <div class="line"></div>
-
-            <div class="step" data-step="3">
-                <div class="circle">3</div>
-                <p>Tickets</p>
-            </diiv>
-
-            <div class="line"></div>
-
-            <div class="step" data-step="4">
-                <div class="circle">4</div>
-                <p>Publish</p>
-            </div>
-
-        </section>
 
         <!--Card-->
         <section id="step1" class="form-card step-content active">
@@ -107,11 +78,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label>description *</label>
+                    <label>Description *</label>
+                    <textarea rows="5"></textarea>
 
-                    <textarea
-                        rows="6"
-                        placeholder="Describe your event...."></textarea>
                 </div>
 
                 <div class="form-group">
@@ -119,31 +88,55 @@
                     <input type="file">
                 </div>
 
-                <button type="submit" class="next-btn">
-
-                    Continue
-
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            
+                 
             </form>
         </section>
 
         <section id="step2" class="form-card step-content">
             <h2>Date and Venue</h2>
-
-
+            <div class="form-group"><label>Date</label><input type="date"></div>
+            <div class="form-group"><label>Time</label><input type="time"></div>
+            <div class="form-group"><label>Venue</label><input type="text"></div>
+           
 
         </section>
 
         <section id="step3" class="form-card step-content">
             <h2>Tickets</h2>
-
+            <div class="form-group"><label>Ticket Price</label><input type="text"></div>
+            <div class="form-group"><label>Available Tickets</label><input type="number"></div>
+            
 
         </section>
 
         <section id="step4" class="form-card step-content">
             <h2>Publish</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Event Title</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Venue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Angkor Sunrise Jazz Night</td>
+                        <td>July 15 2026</td>
+                        <td>6 am</td>
+                        <td>Angkor Wat, Siem Reap</td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+
+            
+
+            
+            <button type="button" class="next-btn">Publish</button>
 
         </section>
     </main>
