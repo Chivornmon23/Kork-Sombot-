@@ -10,8 +10,12 @@
   justify-content: space-between;
   background-color: var(--bg-dark);
   color: var(--text-white);
-  padding: 10px 80px;
+  padding: 10px 90px;
   font-family: var(--font-main);
+  border-bottom: 1px solid var(--btn-hover);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 .logo {
   display: flex;
@@ -309,6 +313,7 @@ body {
   /* To fit the image nicely */
   object-fit: cover;
   display: block;
+  z-index: 0;
 }
 .badge {
   position: absolute;
@@ -547,6 +552,7 @@ footer{
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 10px;
   }
   .footer-links{
     display: flex;
@@ -563,6 +569,17 @@ footer{
     }
     a:hover{
       color: var(--primary-red);
+    }
+  }
+  .footer-contact-info{
+    .lct, .tel, .email, .website{
+      display: flex;
+      gap: 10px;
+      i{
+        font-size: 14px;
+        color: var(--primary-red);
+        text-align: center;
+      }
     }
   }
 }
