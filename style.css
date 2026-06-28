@@ -578,9 +578,19 @@ footer{
       i{
         font-size: 14px;
         color: var(--primary-red);
-        text-align: center;
+        align-items: center;
       }
     }
   }
 }
-
+.footer-end{
+  padding: 20px 80px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--btn-hover);
+  font-family: var(--btn-font);
+  font-size: 15px;
+  color: var(--text-gray);
+  font-weight: 500;
+}
