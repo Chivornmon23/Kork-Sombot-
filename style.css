@@ -355,11 +355,9 @@ body {
   font-size: 13px;
   font-weight: 700;
 }
-<<<<<<< HEAD
 .content{
     background-color: #F8F8F8;
 }
-=======
 .content {
   background-color: #f8f8f8;
   border-bottom-left-radius: 12px;
@@ -599,4 +597,3 @@ footer{
   color: var(--text-gray);
   font-weight: 500;
 }
->>>>>>> 2f59323c3cafaa5df701d238aaddd175226ec6ba
