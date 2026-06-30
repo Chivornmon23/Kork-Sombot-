@@ -200,3 +200,92 @@ th{
     background-color: rgb(227, 176, 176);
     font-weight: 700;
 }
+
+
+footer{
+  background-color: var(--bg-dark);
+  padding: 80px;
+}
+.footer-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer-grid-box{
+  .logo{
+    font-size: 13px;
+    font-weight: 700;
+    font-family: var(--primary-font);
+    margin-bottom: 10px;
+  }
+  p{
+    font-family: var(--btn-font);
+    font-size: 14px;
+    max-width: 200px;
+    color: var(--text-gray);
+    margin-bottom: 25px;
+  }
+  .social-links{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    i{
+      width: 40px;
+      height: 40px;
+      align-content: center;
+      background-color: var(--btn-hover);
+      border-radius: 50%;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    i:hover{
+      background-color: #c8191e;
+    }
+  }
+  .footer-card-title{
+    font-family: var(--btn-font);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .footer-links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    row-gap: 15px;
+    a{
+      text-decoration: none;
+      color: var(--text-gray);
+      font-family: var(--btn-font);
+      font-size: 16px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    a:hover{
+      color: var(--primary-red);
+    }
+  }
+  .footer-contact-info{
+    .lct, .tel, .email, .website{
+      display: flex;
+      gap: 10px;
+      i{
+        font-size: 14px;
+        color: var(--primary-red);
+        align-items: center;
+      }
+    }
+  }
+}
+.footer-end{
+  padding: 20px 80px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--btn-hover);
+  font-family: var(--btn-font);
+  font-size: 15px;
+  color: var(--text-gray);
+  font-weight: 500;
+}
