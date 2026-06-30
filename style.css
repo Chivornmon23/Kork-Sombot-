@@ -84,6 +84,7 @@
   padding: 8px 14px;
   border: 2px solid var(--primary-red);
   border-radius: 8px;
+  
 }
 .btn-outline:hover {
     background-color: var(--primary-red);
@@ -153,6 +154,7 @@ body {
   border-radius: 10px;
   transition: ease-in-out 0.1s;
   cursor: pointer;
+  
 }
 .create:hover {
   background-color: var(--btn-hover);
@@ -184,7 +186,6 @@ body {
   margin-top: 20px;
   text-align: center;
   padding: 20px 0;
-  transition: all 0.2s;
   cursor: pointer;
   h5 {
     font-size: 15px;
@@ -194,19 +195,16 @@ body {
     font-size: 13px;
   }
 }
-.grid-card:hover{
-    transform: scale(1.02);
-}
 .grid-card .icon {
   margin: 0 auto;
   font-size: 1.5em;
 }
-.card1 {
-  background-color: #fff6f6;
-  border: 3px solid #ffecec;
+.card1, .card2, .card3, .card4, .card5{
+  background-color: var(--text-white);
+  border: 3px solid var(--bg-dark);
   border-radius: 18px;
   font-family: var(--btn-font);
-  color: #c8191e;
+  color: var(--bg-dark);
   .icon {
     color: #c8191e;
     background-color: #fadadf;
@@ -217,70 +215,7 @@ body {
     margin-bottom: 20px;
   }
 }
-.card2 {
-  background-color: #f2f8ff;
-  border: 3px solid #e1edff;
-  border-radius: 18px;
-  font-family: var(--btn-font);
-  color: #1e51e2;
-  .icon {
-    color: #1e51e2;
-    background-color: #e1edff;
-    width: 50px;
-    height: 50px;
-    align-content: center;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-}
-.card3 {
-  background-color: #fff9f0;
-  border: 3px solid #fdf1dd;
-  border-radius: 18px;
-  font-family: var(--btn-font);
-  color: #d4611d;
-  .icon {
-    color: #d4611d;
-    background-color: #feeedd;
-    width: 50px;
-    height: 50px;
-    align-content: center;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-}
-.card4 {
-  background-color: #f3fbf4;
-  border: 3px solid #e1f3e2;
-  border-radius: 18px;
-  font-family: var(--btn-font);
-  color: #1c7e2e;
-  .icon {
-    color: #1c7e2e;
-    background-color: #e1f3e2;
-    width: 50px;
-    height: 50px;
-    align-content: center;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-}
-.card5 {
-  background-color: #f9f4ff;
-  border: 3px solid #f1e5ff;
-  border-radius: 18px;
-  font-family: var(--btn-font);
-  color: #8a2be2;
-  .icon {
-    color: #8a2be2;
-    background-color: #f1e5ff;
-    width: 50px;
-    height: 50px;
-    align-content: center;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-}
+
 .featured-events {
   background-color: var(--text-white);
   padding: 80px;
@@ -404,69 +339,7 @@ body {
     background-color: #c8102fbe;
   }
 }
-.promise{
-  background-color: var(--bg-dark);
-  padding: 80px;
-  .grid-promise{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-  .text{
-    text-align: center;
-  }
-  .grid-card-promise{
-    background-color: #1A1A1A;
-    border: 1px solid var(--btn-hover);
-    border-radius: 16px;
-    padding: 27px;
-    margin-top: 50px;
-    transition: ease-in-out 0.1s;
-    cursor: pointer;
-    .icon-promise {
-      background-color: #c8102f27;
-      width: 50px;
-      height: 48px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 16px;
-      margin-bottom: 15px;
-      border: 1px solid #c8102f88;
-      transition: ease-in-out 0.1s;
-      cursor: pointer;
-      
-      i{
-        color: var(--primary-red);
-        font-size: 20px;
-        transition: ease-in-out 0.1s;
-      cursor: pointer;
-      }
-    }
-    .detail-promise {
-      font-family: var(--btn-font);
-      text-align: start;
-      h1{
-        font-size: 16px;
-        margin-bottom: 10px;
-      }
-      p{
-        font-size: 15px;
-        color: var(--text-gray);
-        padding-bottom: 5px;
-      }
-    }
-  }
-}
-.grid-card-promise:hover{
-  border: 1px solid #c8102f88;
-  .icon-promise{
-    background-color: var(--primary-red);
-    i{
-      color: var(--text-white)
-    }
-  }
-}
+
 .banner{
   background-color: var(--primary-red);
   color: var(--text-white);
@@ -587,13 +460,13 @@ footer{
   }
 }
 .footer-end{
-  padding: 20px 80px;
-  margin-top: 15px;
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid var(--btn-hover);
-  font-family: var(--btn-font);
-  font-size: 15px;
-  color: var(--text-gray);
-  font-weight: 500;
+    padding: 20px 80px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--btn-hover);
+    font-family: var(--btn-font);
+    font-size: 15px;
+    color: var(--text-gray);
+    font-weight: 500;
 }
