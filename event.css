@@ -21,14 +21,18 @@
     color: var(--text-white);
 }
 .text1 p {
+    
     color: var(--primary-red);
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-weight: 600;
+    text-transform: uppercase;
 
 }
 .description{
     font-family: var(--btn-font);
-
+    max-width: 550px;
+    margin-top: 10px;
+    color: var(--text-gray);
 }
 
 .search-bar {
