@@ -62,8 +62,33 @@
     width: 20%;
     padding: 5px 0px 5px 10px;
     border-radius: 12px;
-    border: 1px solid var(--primary-red);
     font-family: var(--btn-font);
     color: var(--bg-black);
     outline: none;
+}
+.category{
+    display: flex;
+    gap: 10px;
+    padding: 20px 0px;
+    p{
+        background-color: #cbcbcb37;
+        padding: 8px 15px;
+        border-radius: 16px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: ease-out 0.2s;
+    }
+    p:hover{
+        background-color: #cbcbcb66;
+    }
+    p:active{
+        background-color: var(--primary-red);
+        color: white;
+    }
+}
+.result_status{
+    font-size: 14px;
+    font-weight: 200;
+    color: #4d4d4d89;
 }

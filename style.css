@@ -54,6 +54,9 @@
   background-color: var(--hover-gray);
   transition: ease-in-out 0.1s;
 }
+.nav-links .item a.active{
+  background-color: var(--primary-red);
+}
 .nav-right {
   height: 50px;
   display: flex;
