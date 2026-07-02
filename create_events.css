@@ -93,119 +93,122 @@
 
 body {
   
-    font-family: var(--font-main);
-    background: #f5f5f5;
-    color: #222;
-    line-height: 1.6;
+  font-family: var(--font-main);
+  background: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
 
 }
 
+.subtitle{
+  font-size: 1.2rem;
+  color: var(--primary-red);
+  margin-bottom: 20px;
+}
 .create-hero{
-    background: var(--bg-dark);
-    color: var(--text-white);
+  background: var(--bg-dark);
+  color: var(--text-white);
 
-    padding: 140px 12% 80px;
+  padding: 140px 12% 80px;
 
-    border-bottom: 2px solid var(--primary-red);
+  border-bottom: 2px solid var(--primary-red);
 }
 
 .create-hero h1{
-    font-size: 3.8rem;
-    margin: 15px 0;
+  font-size: 3.8rem;
+  margin: 15px 0;
 }
 
 .create-hero .description{
-    max-width: 650px;
+  max-width: 650px;
 }
 
 
 
 .create-hero p{
-    color: #bdbdbd;
-    font-size: 1.2rem;
+  color: #bdbdbd;
+  font-size: 1.2rem;
 }
 
 .create-event{
-    background:#f5f5f5;
-    padding:70px 0;
+  background:#f5f5f5;
+  padding:70px 0;
 }
 
 
 .step-content{
-    display: block;
+  display: block;
 }
 
 .step-content.active{
-    display: block;
+  display: block;
 }
 
 
 .form-card{
 
-    width:min(900px,90%);
+  width:min(900px,90%);
 
-    margin:auto;
+  margin:auto;
 
-    margin-bottom:40px;
+  margin-bottom:40px;
 
-    background:white;
+  background:white;
 
-    border-radius:20px;
+  border-radius:20px;
 
-    padding:45px;
+  padding:45px;
 
-    box-shadow:0 10px 35px rgba(0,0,0,.08);
+  box-shadow:0 10px 35px rgba(0,0,0,.08);
 
 }
 
 .form-card h2{
 
-    font-size:2rem;
-
-    margin-bottom:30px;
-
-    color:var(--bg-dark);
+  font-size:2rem;
+  margin-bottom:30px;
+  color:var(--bg-dark);
 
 }
 
 fieldset{
 
-    border:1px solid #e3e3e3;
+  border:1px solid #e3e3e3;
 
-    border-radius: 25px;
+  border-radius: 2px;
 
-    padding:30px;
+  padding:30px;
 
 }
 
 legend{
 
-    padding:0 12px;
+  padding:0 12px;
 
-    color:var(--primary-red);
+  color:var(--primary-red);
 
-    font-size:1.2rem;
+  font-size:1.2rem;
 
-    font-weight:700;
+  font-weight:700;
 
 }
 .form-group{
 
-    display:flex;
+  display:flex;
 
-    flex-direction:column;
+  flex-direction:column;
 
-    margin-bottom:22px;
+  margin-bottom:22px;
 
 }
 
 .form-group label{
 
-    margin-bottom:8px;
+  margin-bottom:8px;
 
-    font-weight:600;
+  font-weight:600;
 
-    color:#333;
+  color:#333;
 
 }
 
@@ -231,9 +234,9 @@ legend{
 
 .form-group textarea{
 
-    min-height:140px;
+  min-height:140px;
 
-    resize:vertical;
+  resize:vertical;
 
 }
 
@@ -251,14 +254,13 @@ legend{
 
 input[type="file"]{
 
-    padding:12px;
+  padding:12px;
 
-    cursor:pointer;
+  cursor:pointer;
 
 }
 
 button{
-
     background:var(--primary-red);
 
     color:white;
@@ -294,33 +296,34 @@ button:hover{
 
 }
 .preview-table{
-    width: 75%;
-    margin: 30px auto;
-    border-collapse: separate;
-    border-spacing: 0;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+  width: 75%;
+  margin: 30px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
 }
 
 .preview-table th{
-    width: 220px;
-    background: #f8d7da;
-    color: #8b0000;
-    text-align: left;
-    padding: 16px 20px;
-    font-size: 1rem;
+  width: 220px;
+  background: #f8d7da;
+  color: #8b0000;
+  text-align: left;
+  padding: 16px 20px;
+  font-size: 1rem;
 }
 
 .preview-table td{
-    background: white;
-    padding: 16px 20px;
-    border-bottom: 1px solid #eee;
+  background: white;
+  color: #333;
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
 }
 
 .preview-table tr:last-child td,
 .preview-table tr:last-child th{
-    border-bottom: none;
+  border-bottom: none;
 }
 
 
