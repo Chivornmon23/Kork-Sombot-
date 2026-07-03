@@ -11,19 +11,19 @@ body {
     background: #f5f6fa;
     min-height: 100vh;
     display: flex;
-        }
-        
+}
+
 /*Left panel*/
 
 .panel-left {
     width: 30%;
     background: linear-gradient(135deg,  #1a1a1a, #C8102E);
     color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 50px 60px;
-        }
+}
 
 .logo {
     display: flex;
@@ -51,14 +51,14 @@ body {
 .hero-copy {
     max-width: 430px;
     margin-bottom: 100px;
-        }
+}
 
 .hero-copy h2 {
     font-family: "Clash Display", sans-serif;
     font-size: 52px;
     line-height: 1.2;
     margin-bottom: 20px;
-        }
+}
 
 .hero-copy p {
     font-size: 17px;
@@ -70,12 +70,12 @@ body {
 /* Right panel*/
 .panel-right {
     width: 70%;
-            display: flex;
+    display: flex;
     justify-content: center;
-            align-items: center;
+    align-items: center;
     background: white;
     padding: 40px;
-        }
+}
 
 .signup-box {
     width: 100%;
@@ -93,7 +93,7 @@ body {
     color: #666;
     margin-bottom: 35px;
     line-height: 1.6;
-        }
+}
 
 
 
@@ -101,7 +101,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 22px;
-        }
+}
 
 .form-group label {
     margin-bottom: 8px;
@@ -118,11 +118,11 @@ body {
     outline: none;
     transition: .3s;
     font-family: inherit;
-        }
+}
 
 .form-group input::placeholder {
     color: #aaa;
-        }
+}
 
 .form-group input:focus {
     border-color: #C8102E;
@@ -143,9 +143,9 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: .3s;
-        }
+}
 
 .signup-button:hover {
     background: #C8102E;
     transform: translateY(-2px);
-        }
+}
