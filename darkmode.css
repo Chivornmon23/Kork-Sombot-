@@ -1,0 +1,83 @@
+
+body.dark {
+/* dark mode on navbar */
+  .navbar{
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+  }
+  .logo-container i{
+    color: var(--text-white);
+  }
+  .nav-links-items a{
+    color: var(--text-white);
+  }
+  .btn-outline{
+    color: var(--text-white);
+  }
+  .log-in{
+    color: var(--text-white);
+  }
+/* Dark mode on event categories */
+  .event-categ{
+    background-color: #444141;
+  }
+  .text{
+    color: var(--text-white);
+  }
+  .grid-card{
+    background-color: var(--bg-dark);
+    h5, .icon{
+        color: var(--bg-light);
+    }
+    p{
+        color: var(--primary-red);
+    }
+    .icon{
+        background-color: var(--primary-red); 
+    }
+  }
+/* Dark mode on Featured Events */
+  .featured-events{
+    background-color: var(--bg-dark);
+  }
+  .content{
+    background-color: #444141;
+    color: var(--text-white);
+  }
+  .banner{
+    background-color: #444141;
+    h1{
+        color: var(--text-white);
+    }
+    p{
+        color: var(--text-white);
+    }
+  }
+  .btn-banner .browse-btn{
+    color: var(--bg-light);
+    border: 1px solid #000000;
+    transition: ease-in 0.2s;
+  }
+  .btn-banner .browse-btn:hover{
+    background-color: #000000;
+    color: var(--text-white);
+  }
+  .btn-banner .free-btn{
+    color: var(--text-white);
+    background-color: var(--bg-dark);
+  }
+/* Dark Mode on footer */
+  footer{
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+  }
+  p{
+    color: var(--text-gray);
+  }
+  .footer-links a{
+    color: var(--text-white);
+  }
+  .footer-end{
+    background-color: var(--bg-dark);
+  }
+}
