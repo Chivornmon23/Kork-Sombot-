@@ -1,113 +1,151 @@
-.split-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            min-height: calc(100vh - 82px); /* Offsets header size dynamically */
-            width: 100%;
+@import url(./variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background: #f5f6fa;
+    min-height: 100vh;
+    display: flex;
         }
         
-        /* Left Brand Hero Sidebar matching image_89c83f.jpg styling rules */
-        .brand-banner-side {
-            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(40, 10, 20, 0.85)), 
-                        url('image_89c83f.jpg') no-repeat center center;
-            background-size: cover;
-            padding: 4rem 3.5rem;
+/*Left panel*/
+
+.panel-left {
+    width: 30%;
+    background: linear-gradient(135deg,  #1a1a1a, #C8102E);
+    color: white;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            color: #ffffff;
+    padding: 50px 60px;
         }
 
-        .brand-banner-side .logo h1 {
-            color: #ffffff !important;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container {
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    background: #C8102E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.logo h1 {
+    font-family: "Technor", sans-serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.hero-copy {
+    max-width: 430px;
+    margin-bottom: 100px;
         }
 
-        .hero-banner-title h1 {
-            font-family: 'Clash Display', sans-serif;
-            font-size: 2.85rem;
-            font-weight: 800;
-            line-height: 1.15;
-            margin-bottom: 1rem;
-            letter-spacing: 0.5px;
+.hero-copy h2 {
+    font-family: "Clash Display", sans-serif;
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
         }
 
-        .hero-banner-title p {
-            font-family: 'Clash Grotesk', sans-serif;
-            font-size: 1.05rem;
-            color: #dddddd;
-            max-width: 460px;
-        }
+.hero-copy p {
+    font-size: 17px;
+    line-height: 1.8;
+    opacity: .9;
+}
 
-        /* Sign-up view structural fine-tuning */
-        .sign-up-page .form-section {
-            padding: 3rem 2rem;
+
+/* Right panel*/
+.panel-right {
+    width: 70%;
             display: flex;
+    justify-content: center;
             align-items: center;
-            justify-content: center;
-            background-color: #ffffff;
+    background: white;
+    padding: 40px;
         }
 
-        .sign-up-page .form-container h2 {
-            font-family: 'Clash Display', sans-serif;
-            font-size: 2.2rem;
-            font-weight: 800;
-            margin-bottom: 0.35rem;
-            text-transform: uppercase;
+.signup-box {
+    width: 100%;
+    max-width: 470px;
+}
+
+.signup-box h1 {
+    font-family: "Clash Display", sans-serif;
+    font-size: 38px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.signup-text {
+    color: #666;
+    margin-bottom: 35px;
+    line-height: 1.6;
         }
 
-        /* Social OAuth buttons structure block */
-        .divider {
-            text-align: center;
-            margin: 1.75rem 0;
-            position: relative;
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
         }
 
-        .divider::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background-color: #e5e5e5;
-            z-index: 1;
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    transition: .3s;
+    font-family: inherit;
         }
 
-        .divider span {
-            background-color: #ffffff;
-            padding: 0 12px;
-            font-size: 0.85rem;
-            color: #888888;
-            position: relative;
-            z-index: 2;
+.form-group input::placeholder {
+    color: #aaa;
         }
 
-        .social-login {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+.form-group input:focus {
+    border-color: #C8102E;
+    box-shadow: 0 0 0 4px rgba(242, 73, 73, 0.15);
+}
+
+
+
+.signup-button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: #C8102E;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
         }
 
-        .btn-social {
-            background-color: #ffffff;
-            border: 1px solid #e5e5e5;
-            padding: 0.85rem;
-            font-size: 0.95rem;
-            font-weight: 600;
-            border-radius: 8px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            transition: all 0.2s ease;
-        }
-
-        .btn-social:hover {
-            background-color: #f9f9f9;
-            border-color: #cccccc;
-        }
-
-        @media (max-width: 992px) {
-            .split-wrapper { grid-template-columns: 1fr; }
-            .brand-banner-side { display: none; }
+.signup-button:hover {
+    background: #C8102E;
+    transform: translateY(-2px);
         }
