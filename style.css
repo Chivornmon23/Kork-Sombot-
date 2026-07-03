@@ -315,10 +315,12 @@
   font-size: 13px;
   font-weight: 700;
 }
+<<<<<<< HEAD
 .content{
     background-color: #F8F8F8;
     color: black;
 }
+=======
 .content {
   background-color: #f8f8f8;
   border-bottom-left-radius: 12px;
@@ -499,21 +501,3 @@ footer{
     font-weight: 500;
 }
 
-.show-more-btn {
-  display: flex;
-  width: 500px;
-  height: 30px;
-  justify-content: center;
-  color: darkred;
-  background-color: white;
-  margin: 10px 585px;
-  font-weight: bold;
-  font-size: 20px;
-  margin-top: 30px;
-  border-color: darkred;
-}
-
-.show-more-btn:hover {
-  color: #ffffff;
-  background-color: #8d0000;
-}

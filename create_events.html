@@ -32,7 +32,7 @@
 
             <div class="nav-right">
                 <a href="#Login">Login</a>
-                <a href="#Signup" class="btn-bg">Sign Up</a>
+                <a href="./sign_up.html" class="btn-bg">Sign Up</a>
                 <div class="user-icon">
                     <i class="fa-solid fa-user"></i>
                 </div>
@@ -55,92 +55,248 @@
         
         <!--Card-->
         <section id="step1" class="form-card step-content active">
-            <h2>Basic Information</h2>
+            <fieldset>
+                <legend>Basic Information</legend>
 
-            <form>
                 <div class="form-group">
-                    <label>Event Title *</label>
-
+                    <label for="title">Event Title *</label>
                     <input
-                    type="text"
-                    placeholder="e.g. Angkor Sunrise Jazz Night">
+                        type="text"
+                        id="title"
+                        name="title"
+                        placeholder="e.g. Angkor Sunrise Jazz Night"
+                        required>
                 </div>
 
                 <div class="form-group">
-                    <label>Category *</label>
-                    <select>
-                        <option>Selection a category</option>
-                        <option>Concert</option>
-                        <option>Workshop</option>
-                        <option>Others</option>  <!--for now we mostly focus on concerts and workshops-->
-                
+                    <label for="category">Category *</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a category</option>
+                        <option value="Concert">Concert</option>
+                        <option value="Workshop">Workshop</option>
+                        <option value="Festival">Festival</option>
+                        <option value="Other">Other</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label>Description *</label>
-                    <textarea rows="5"></textarea>
+                    <label for="description">Description *</label>
 
+                    <textarea
+                        id="description"
+                        name="description"
+                        rows="5"
+                        minlength="10"
+                        maxlength="200"
+                        placeholder="Describe your event..."
+                        required></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label>Event Banner</label>
-                    <input type="file">
+                    <label for="banner">Event Banner</label>
+
+                    <input
+                        type="file"
+                        id="banner"
+                        name="banner"
+                        accept="image/*">
                 </div>
 
-            
-            </form>
+            </fieldset>
         </section>
 
         <section id="step2" class="form-card step-content">
-            <h2>Date and Venue</h2>
-            <div class="form-group"><label>Date</label><input type="date"></div>
-            <div class="form-group"><label>Time</label><input type="time"></div>
-            <div class="form-group"><label>Venue</label><input type="text"></div>
-           
+
+            <fieldset>
+                <legend>Date & Venue</legend>
+
+                <div class="form-group">
+                    <label for="eventDate">Event Date *</label>
+                    <input
+                        type="date"
+                        id="eventDate"
+                        name="eventDate"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventTime">Event Time *</label>
+                    <input
+                        type="time"
+                        id="eventTime"
+                        name="eventTime"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="venue">Venue *</label>
+                    <input
+                        type="text"
+                        id="venue"
+                        name="venue"
+                        placeholder="e.g. Angkor Wat, Siem Reap"
+                        required>
+                </div>
+
+            </fieldset>
 
         </section>
 
         <section id="step3" class="form-card step-content">
-            <h2>Tickets</h2>
-            <div class="form-group"><label>Ticket Price</label><input type="text"></div>
-            <div class="form-group"><label>Available Tickets</label><input type="number"></div>
-            
+
+            <fieldset>
+                <legend>Ticket Information</legend>
+
+                <div class="form-group">
+                    <label for="price">Ticket Price (USD)</label>
+                    <input
+                        type="number"
+                        id="price"
+                        name="price"
+                        min="0"
+                        placeholder="15">
+                </div>
+
+                <div class="form-group">
+                    <label for="tickets">Available Tickets</label>
+                    <input
+                        type="number"
+                        id="tickets"
+                        name="tickets"
+                        min="1"
+                        placeholder="200">
+                </div>
+
+            </fieldset>
 
         </section>
-
         <section id="step4" class="form-card step-content">
-            <h2>Publish</h2>
-            
-            <table>
-                <thead>
+
+            <h2>Review and Publish</h2>
+
+            <p>Please review your information before publishing.</p>
+
+            <table class="preview-table">
+
+                <tbody>
+
                     <tr>
                         <th>Event Title</th>
-                        <th>Date</th>
-                        <th>Time</th>
-                        <th>Venue</th>
+                        <td id="previewTitle">--</td>
                     </tr>
-                </thead>
-                <tbody>
-                   <tr>
-                    <td>Angkor Sunrise Jazz Night</td>
-                        <td>July 15,2026</td>
-                    <td>6 am</td>
-                    <td>Angkor Wat, Siem Reap</td>
-                   </tr> 
-                    
+
+                    <tr>
+                        <th>Category</th>
+                        <td id="previewCategory">--</td>
+                    </tr>
+
+                    <tr>
+                        <th>Description</th>
+                        <td id="previewDescription">--</td>
+                    </tr>
+
+                    <tr>
+                        <th>Date</th>
+                        <td id="previewDate">--</td>
+                    </tr>
+
+                    <tr>
+                        <th>Time</th>
+                        <td id="previewTime">--</td>
+                    </tr>
+
+                    <tr>
+                        <th>Venue</th>
+                        <td id="previewVenue">--</td>
+                    </tr>
+
+                    <tr>
+                        <th>Ticket Price</th>
+                        <td id="previewPrice">--</td>
+                    </tr>
+
+                    <tr>
+                        <th>Available Tickets</th>
+                        <td id="previewTickets">--</td>
+                    </tr>
 
                 </tbody>
 
-
             </table>
-            <p>Review your event information before publishing.</p>
             
 
-            
-            <button type="button" class="next-btn">Publish</button>
+            <button type="submit" class="publish-btn">
+                Publish Event
+            </button>
 
         </section>
+
+         <footer>
+            <div class="footer-grid">
+                <div class="footer-grid-box">
+                    <div class="logo">
+                        <div class="logo-container">
+                            <i class="fa-solid fa-ticket"></i>
+                        </div>
+                        <h1>KORK SOMBOT</h1>
+                    </div>
+                    <p>Cambodia's premier platform for discovering and booking concerts, workshops, festivals, and cultural events.</p>
+                    <div class="social-links">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                    </div>
+                </div>
+                <div class="footer-grid-box">
+                    <h1 class="footer-card-title">Explore</h1>
+                    <div class="footer-links xPlore">
+                        <a href="#">Events</a>
+                        <a href="#">Workshops</a>
+                        <a href="#">Concerts</a>
+                        <a href="#">Festivals</a>
+                        <a href="#">Create Event</a>
+                    </div>
+                </div>
+                <div class="footer-grid-box">
+                    <h1 class="footer-card-title">Support</h1>
+                    <div class="footer-links support">
+                        <a href="#">Help Center</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Refund Policy</a>
+                        <a href="#">Contact Us </a>
+                    </div>
+                </div>
+                <div class="footer-grid-box">
+                    <h1 class="footer-card-title">Contact</h1>
+                    <div class="footer-contact-info">
+                        <div class="lct">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>AUPP, Russey Keo, Phnom Penh, Cambodia</p>
+                        </div>
+                        <div class="tel">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+855 67 676 676</p>
+                        </div>
+                        <div class="email">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p>korksombot@gmail.com</p>
+                        </div>
+                        <div class="website">
+                            <i class="fa-solid fa-globe"></i>
+                            <p>www.korksombot.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+        <div class="footer-end">
+                <p>© 2026 KORK SOMBOT. All rights reserved.</p>
+                <p>Made by Navy, Mouy, Davan, Chivorn (AUPP, Summer26 - INFO 250)</p>
+        </div>
     </main>
     <script src="./script.js"></script>
     </body>
