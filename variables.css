@@ -4,11 +4,13 @@
     /* color */
   --primary-red: #C8102E;
   --bg-dark: #0D0D0D;
+  --bg-light: #fff;
   --text-white: #ffffff;
   --text-gray: #b3b3b3;
   --surface-dark: #1a1a1a;
   --hover-gray: #eec4c42c;
   --btn-hover: #b3b3b34b;
+  --footer-bg: #a0a0a0;
 
     /* font family */
   --font-main: 'Clash Grotesk', sans-serif;
