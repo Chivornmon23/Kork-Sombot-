@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="concerts.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=supreme@400&f[]=technor@600&f[]=archivo@400&f[]=clash-display@600&f[]=clash-grotesk@400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-container">
+                     <i class="fa-solid fa-ticket"></i>
+                </div>
+                <h1>KORK SOMBOT</h1>
+            </div>
+
+            <div>
+                <ul class="nav-links">
+                    <div class="nav-links item">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="/events.html">Events</a></li>
+                        <li><a href="/Workshop.html">Workshops</a></li>
+                        <li><a href="/concerts.html">Concerts</a></li>
+                    </div>
+                    <a href="/create_events.html" class="btn-outline">Create Event</a>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="#Login">Login</a>
+                <a href=".vscode/sign_up.html" class="btn-bg">Sign Up</a>
+                <div class="user-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+<!--Concert card-->
+        <section class="featured-events">
+            <!--concert 1-->
+            <div class="event-detail-card">
+                <div class="event-detail-image">
+                    <img src="https://www.khmertimeskh.com/wp-content/uploads/2023/07/qqq-1.jpeg" alt="vannda_concert">
+                    <span class="tag-overlay">Local Artist</span>
+                </div>
+                <div class="event-detail-content">
+                    <span class="status-badge"><i class="fa-solid fa-arrow-trend-up"></i> 85% Full</span>
+                    <h1 class="event-title">Vannda Solo Concert</h1>
+                    <div class="event-meta">
+                        <div><i class="fa-regular fa-calendar"></i> July 12, 2026</div>
+                        <div><i class="fa-solid fa-location-dot"></i>Koh Pich</div>
+                    </div>
+
+                    <p class="ticket-label">SELECT TICKET TYPE</p>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <p class="ticket-type">Standard</p>
+                            <p class="ticket-price">$10</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Premium</p>
+                            <p class="ticket-price">$30</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Backstage</p>
+                            <p class="ticket-price">$90</p>
+                        </div>
+                    </div>
+
+                    <div class="event-detail-actions">
+                        <button class="buy-btn">Buy Tickets</button>
+                        <button class="save-btn"><i class="fa-regular fa-heart"></i> Save</button>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Concert 2-->
+
+            <div class="event-detail-card">
+                <div class="event-detail-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqfMetxxTR1K9TuGbanvlYYu5wQZGjbeiuOTWoyVilg&s=10" alt="EXO concert">
+                    <span class="tag-overlay">KPOP</span>
+                </div>
+                <div class="event-detail-content">
+                    <span class="status-badge"><i class="fa-solid fa-arrow-trend-up"></i> 85% Full</span>
+                    <h1 class="event-title">EXO OT12 Concert</h1>
+                    <div class="event-meta">
+                        <div><i class="fa-regular fa-calendar"></i> July 30, 2026</div>
+                        <div><i class="fa-solid fa-location-dot"></i> Morodok Techo Stadium, Phnom Penh</div>
+                    </div>
+
+                    <p class="ticket-label">SELECT TICKET TYPE</p>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <p class="ticket-type">Standard</p>
+                            <p class="ticket-price">$25</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Premium</p>
+                            <p class="ticket-price">$50</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Backstage</p>
+                            <p class="ticket-price">$100</p>
+                        </div>
+                    </div>
+
+                    <div class="event-detail-actions">
+                        <button class="buy-btn">Buy Tickets</button>
+                        <button class="save-btn"><i class="fa-regular fa-heart"></i> Save</button>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Concert 3-->
+            <div class="event-detail-card">
+                <div class="event-detail-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoD139-Hy5ukPWcLjjjTkIpiIWUgqJ9wEs6LhELni3ic8UyeLZzSv_WEV&s=10" alt="">
+                    <span class="tag-overlay">Local Artist</span>
+                </div>
+                <div class="event-detail-content">
+                    <span class="status-badge"><i class="fa-solid fa-arrow-trend-up"></i> 85% Full</span>
+                    <h1 class="event-title">Ork Sokunkanha Solo Concert</h1>
+                    <div class="event-meta">
+                        <div><i class="fa-regular fa-calendar"></i> August 1, 2026</div>
+                        <div><i class="fa-solid fa-location-dot"></i> Morodok Techo Stadium, Phnom Penh</div>
+                    </div>
+
+                    <p class="ticket-label">SELECT TICKET TYPE</p>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <p class="ticket-type">Standard</p>
+                            <p class="ticket-price">$10</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Premium</p>
+                            <p class="ticket-price">$30</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Backstage</p>
+                            <p class="ticket-price">$90</p>
+                        </div>
+                    </div>
+
+                    <div class="event-detail-actions">
+                        <button class="buy-btn">Buy Tickets</button>
+                        <button class="save-btn"><i class="fa-regular fa-heart"></i> Save</button>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Concert 4-->
+            <div class="event-detail-card">
+                <div class="event-detail-image">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02216dbcd600f0208eb8d3c972" alt="">
+                    <span class="tag-overlay">Local Artist</span>
+                </div>
+                <div class="event-detail-content">
+                    <span class="status-badge"><i class="fa-solid fa-arrow-trend-up"></i> 60% Full</span>
+                    <h1 class="event-title">Suly Pheng Concert</h1>
+                    <div class="event-meta">
+                        <div><i class="fa-regular fa-calendar"></i>August 15, 2026</div>
+                        <div><i class="fa-solid fa-location-dot"></i>Deja Vu</div>
+                    </div>
+
+                    <p class="ticket-label">SELECT TICKET TYPE</p>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <p class="ticket-type">Zone ស្រឡាញ់គេម្នាក់​ឯង</p>
+                            <p class="ticket-price">$10</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Premium</p>
+                            <p class="ticket-price">$20</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Backstage</p>
+                            <p class="ticket-price">$30</p>
+                        </div>
+                    </div>
+
+                    <div class="event-detail-actions">
+                        <button class="buy-btn">Buy Tickets</button>
+                        <button class="save-btn"><i class="fa-regular fa-heart"></i> Save</button>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Concert 5-->
+            <div class="event-detail-card">
+                <div class="event-detail-image">
+                    <img src="https://media.themoviedb.org/t/p/w500/nSFBCyjyRd37uII5OTT0txk7Fld.jpg" alt="">
+                    <span class="tag-overlay">CPOP</span>
+                </div>
+                <div class="event-detail-content">
+                    <span class="status-badge"><i class="fa-solid fa-arrow-trend-up"></i> 90% Full</span>
+                    <h1 class="event-title">Keep Running Fan Meeting</h1>
+                    <div class="event-meta">
+                        <div><i class="fa-regular fa-calendar"></i>August 26, 2026</div>
+                        <div><i class="fa-solid fa-location-dot"></i>Koh Pich</div>
+                    </div>
+
+                    <p class="ticket-label">SELECT TICKET TYPE</p>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <p class="ticket-type">Standard</p>
+                            <p class="ticket-price">$10</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Premium</p>
+                            <p class="ticket-price">$30</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Backstage</p>
+                            <p class="ticket-price">$60</p>
+                        </div>
+                    </div>
+
+                    <div class="event-detail-actions">
+                        <button class="buy-btn">Buy Tickets</button>
+                        <button class="save-btn"><i class="fa-regular fa-heart"></i> Save</button>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Concert 6-->
+            <div class="event-detail-card">
+                <div class="event-detail-image">
+                    <img src="https://i.scdn.co/image/ab67616d00001e027cbe621cf547ddab3ce68b49" alt="">
+                    <span class="tag-overlay">Local Artist</span>
+                </div>
+                <div class="event-detail-content">
+                    <span class="status-badge"><i class="fa-solid fa-arrow-trend-up"></i> 50% Full</span>
+                    <h1 class="event-title">Khmeng Khmer 2.0 Concert</h1>
+                    <div class="event-meta">
+                        <div><i class="fa-regular fa-calendar"></i> September 1, 2026</div>
+                        <div><i class="fa-solid fa-location-dot"></i> The Water, Phnom Penh</div>
+                    </div>
+
+                    <p class="ticket-label">SELECT TICKET TYPE</p>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <p class="ticket-type">Standard</p>
+                            <p class="ticket-price">$10</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Premium</p>
+                            <p class="ticket-price">$30</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Backstage</p>
+                            <p class="ticket-price">$90</p>
+                        </div>
+                    </div>
+
+                    <div class="event-detail-actions">
+                        <button class="buy-btn">Buy Tickets</button>
+                        <button class="save-btn"><i class="fa-regular fa-heart"></i> Save</button>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Concert 7-->
+            <div class="event-detail-card">
+                <div class="event-detail-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcYr_kzHBTL4kwM__ftBMWNaEceE4enkfrnNEJS_AleQi9nIiLlkIRY6k&s=10" alt="">
+                    <span class="tag-overlay">Local Artist</span>
+                </div>
+                <div class="event-detail-content">
+                    <span class="status-badge"><i class="fa-solid fa-arrow-trend-up"></i> 45% Full</span>
+                    <h1 class="event-title">Monetrey Concert</h1>
+                    <div class="event-meta">
+                        <div><i class="fa-regular fa-calendar"></i>September 12, 2026</div>
+                        <div><i class="fa-solid fa-location-dot"></i>The Water</div>
+                    </div>
+
+                    <p class="ticket-label">SELECT TICKET TYPE</p>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <p class="ticket-type">Standard</p>
+                            <p class="ticket-price">$10</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Premium</p>
+                            <p class="ticket-price">$30</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Backstage</p>
+                            <p class="ticket-price">$90</p>
+                        </div>
+                    </div>
+
+                    <div class="event-detail-actions">
+                        <button class="buy-btn">Buy Tickets</button>
+                        <button class="save-btn"><i class="fa-regular fa-heart"></i> Save</button>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Concert 8-->
+            <div class="event-detail-card">
+                <div class="event-detail-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvqPW2VMhpVYC9XDnaRJ0IQfYuwMYSgLlv1tIUpdUIewGm4tWftrSiyVw&s=10" alt="">
+                    <span class="tag-overlay">Local Artist</span>
+                </div>
+                <div class="event-detail-content">
+                    <span class="status-badge"><i class="fa-solid fa-arrow-trend-up"></i> 85% Full</span>
+                    <h1 class="event-title">G-Devith Concert</h1>
+                    <div class="event-meta">
+                        <div><i class="fa-regular fa-calendar"></i>September 26, 2026</div>
+                        <div><i class="fa-solid fa-location-dot"></i>Koh Pich</div>
+                    </div>
+
+                    <p class="ticket-label">SELECT TICKET TYPE</p>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <p class="ticket-type">Standard</p>
+                            <p class="ticket-price">$10</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Premium</p>
+                            <p class="ticket-price">$20</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Backstage</p>
+                            <p class="ticket-price">$40</p>
+                        </div>
+                    </div>
+
+                    <div class="event-detail-actions">
+                        <button class="buy-btn">Buy Tickets</button>
+                        <button class="save-btn"><i class="fa-regular fa-heart"></i> Save</button>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Concert 9-->
+            <div class="event-detail-card">
+                <div class="event-detail-image">
+                    <img src="https://sudsapda.com/app/uploads/2026/06/008CnFwzly1ide8ifdvlkj33zl5zau15.jpg" alt="">
+                    <span class="tag-overlay">CPOP</span>
+                </div>
+                <div class="event-detail-content">
+                    <span class="status-badge"><i class="fa-solid fa-arrow-trend-up"></i> 88% Full</span>
+                    <h1 class="event-title">Never Ending Summer Drama Promotion</h1>
+                    <div class="event-meta">
+                        <div><i class="fa-regular fa-calendar"></i>September 28, 2026</div>
+                        <div><i class="fa-solid fa-location-dot"></i>Koh Pich</div>
+                    </div>
+
+                    <p class="ticket-label">SELECT TICKET TYPE</p>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <p class="ticket-type">Standard</p>
+                            <p class="ticket-price">$10</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Premium</p>
+                            <p class="ticket-price">$30</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Backstage</p>
+                            <p class="ticket-price">$60</p>
+                        </div>
+                    </div>
+
+                    <div class="event-detail-actions">
+                        <button class="buy-btn">Buy Tickets</button>
+                        <button class="save-btn"><i class="fa-regular fa-heart"></i> Save</button>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Concert 10-->
+            <div class="event-detail-card">
+                <div class="event-detail-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3j_4STGPlRlAp9ue3uQggCvcf1oXQuz4OHo7RqXqfQzfS9i_ZpNMJjvE&s=10" alt="">
+                    <span class="tag-overlay">CPOP</span>
+                </div>
+                <div class="event-detail-content">
+                    <span class="status-badge"><i class="fa-solid fa-arrow-trend-up"></i> 75% Full</span>
+                    <h1 class="event-title">TNT Southeast Asia Tour</h1>
+                    <div class="event-meta">
+                        <div><i class="fa-regular fa-calendar"></i>October 10, 2026</div>
+                        <div><i class="fa-solid fa-location-dot"></i>OCIC</div>
+                    </div>
+
+                    <p class="ticket-label">SELECT TICKET TYPE</p>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <p class="ticket-type">Standard</p>
+                            <p class="ticket-price">$10</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Premium</p>
+                            <p class="ticket-price">$30</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Backstage</p>
+                            <p class="ticket-price">$90</p>
+                        </div>
+                    </div>
+
+                    <div class="event-detail-actions">
+                        <button class="buy-btn">Buy Tickets</button>
+                        <button class="save-btn"><i class="fa-regular fa-heart"></i> Save</button>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!--Concert 11-->
+            <div class="event-detail-card">
+                <div class="event-detail-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmIBXeZFuxxNXFdlSBxWkd2prP9uvHPNncxqELYxG9cDzryn0bcDekHWDr&s=10" alt="">
+                    <span class="tag-overlay">Local Artist</span>
+                </div>
+                <div class="event-detail-content">
+                    <span class="status-badge"><i class="fa-solid fa-arrow-trend-up"></i> Full</span>
+                    <h1 class="event-title">Sok Pisey Concert</h1>
+                    <div class="event-meta">
+                        <div><i class="fa-regular fa-calendar"></i>October 15, 2026</div>
+                        <div><i class="fa-solid fa-location-dot"></i>Koh Pich</div>
+                    </div>
+
+                    <p class="ticket-label">SELECT TICKET TYPE</p>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <p class="ticket-type">Standard</p>
+                            <p class="ticket-price">$10</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Premium</p>
+                            <p class="ticket-price">$20</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Backstage</p>
+                            <p class="ticket-price">$40</p>
+                        </div>
+                    </div>
+
+                    <div class="event-detail-actions">
+                        <button class="buy-btn">Buy Tickets</button>
+                        <button class="save-btn"><i class="fa-regular fa-heart"></i> Save</button>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Concert 12-->
+            <div class="event-detail-card">
+                <div class="event-detail-image">
+                    <img src="https://kpopofficial.com/wp-content/uploads/2025/11/Stray-Kids-Rock-in-Rio-Palco-Mundo-2026.webp" alt="">
+                    <span class="tag-overlay">KPOP</span>
+                </div>
+                <div class="event-detail-content">
+                    <span class="status-badge"><i class="fa-solid fa-arrow-trend-up"></i> 60% Full</span>
+                    <h1 class="event-title">Stray Kids World Tour</h1>
+                    <div class="event-meta">
+                        <div><i class="fa-regular fa-calendar"></i>October 30, 2026</div>
+                        <div><i class="fa-solid fa-location-dot"></i>Koh Pich</div>
+                    </div>
+
+                    <p class="ticket-label">SELECT TICKET TYPE</p>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <p class="ticket-type">Standard</p>
+                            <p class="ticket-price">$10</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Premium</p>
+                            <p class="ticket-price">$30</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Backstage</p>
+                            <p class="ticket-price">$90</p>
+                        </div>
+                    </div>
+
+                    <div class="event-detail-actions">
+                        <button class="buy-btn">Buy Tickets</button>
+                        <button class="save-btn"><i class="fa-regular fa-heart"></i> Save</button>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Concert 13-->
+            <div class="event-detail-card">
+                <div class="event-detail-image">
+                    <img src="https://i.scdn.co/image/ab67616100005174b29c20ae1a1435066fe26f35" alt="">
+                    <span class="tag-overlay">KPOP</span>
+                </div>
+                <div class="event-detail-content">
+                    <span class="status-badge"><i class="fa-solid fa-arrow-trend-up"></i>75% Full</span>
+                    <h1 class="event-title">AESPA Concert</h1>
+                    <div class="event-meta">
+                        <div><i class="fa-regular fa-calendar"></i>November 11, 2026</div>
+                        <div><i class="fa-solid fa-location-dot"></i>Koh Pich</div>
+                    </div>
+
+                    <p class="ticket-label">SELECT TICKET TYPE</p>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <p class="ticket-type">Standard</p>
+                            <p class="ticket-price">$10</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Premium</p>
+                            <p class="ticket-price">$30</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Backstage</p>
+                            <p class="ticket-price">$90</p>
+                        </div>
+                    </div>
+
+                    <div class="event-detail-actions">
+                        <button class="buy-btn">Buy Tickets</button>
+                        <button class="save-btn"><i class="fa-regular fa-heart"></i> Save</button>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!--Concert 14-->
+            <div class="event-detail-card">
+                <div class="event-detail-image">
+                    <img src="https://image.koreajoongangdaily.com/?imageId=12626178&width=1200" alt="">
+                    <span class="tag-overlay">KPOP</span>
+                </div>
+                <div class="event-detail-content">
+                    <span class="status-badge"><i class="fa-solid fa-arrow-trend-up"></i> 78% Full</span>
+                    <h1 class="event-title">Cortis Concert</h1>
+                    <div class="event-meta">
+                        <div><i class="fa-regular fa-calendar"></i>November 21, 2026</div>
+                        <div><i class="fa-solid fa-location-dot"></i>Koh Pich</div>
+                    </div>
+
+                    <p class="ticket-label">SELECT TICKET TYPE</p>
+                    <div class="ticket-options">
+                        <div class="ticket-option">
+                            <p class="ticket-type">Standard</p>
+                            <p class="ticket-price">$10</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Premium</p>
+                            <p class="ticket-price">$30</p>
+                        </div>
+                        <div class="ticket-option">
+                            <p class="ticket-type">Backstage</p>
+                            <p class="ticket-price">$90</p>
+                        </div>
+                    </div>
+
+                    <div class="event-detail-actions">
+                        <button class="buy-btn">Buy Tickets</button>
+                        <button class="save-btn"><i class="fa-regular fa-heart"></i> Save</button>
+                        <button class="share-btn"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="show-more-btn">
+                    <span class="text">Show More</span> <br>
+                    <span class="arrow">&#8964;</span>
+                </button>
+            </div>
+
+        </section>
+            
+    
+
+                <!-- Footer -->
+        <footer>
+            <div class="footer-grid">
+                <div class="footer-grid-box">
+                    <div class="logo">
+                        <div class="logo-container">
+                            <i class="fa-solid fa-ticket"></i>
+                        </div>
+                        <h1>KORK SOMBOT</h1>
+                    </div>
+                    <p>Cambodia's premier platform for discovering and booking concerts, workshops, festivals, and cultural events.</p>
+                    <div class="social-links">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                    </div>
+                </div>
+                <div class="footer-grid-box">
+                    <h1 class="footer-card-title">Explore</h1>
+                    <div class="footer-links xPlore">
+                        <a href="#">Events</a>
+                        <a href="#">Workshops</a>
+                        <a href="#">Concerts</a>
+                        <a href="#">Festivals</a>
+                        <a href="#">Create Event</a>
+                    </div>
+                </div>
+                <div class="footer-grid-box">
+                    <h1 class="footer-card-title">Support</h1>
+                    <div class="footer-links support">
+                        <a href="#">Help Center</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Refund Policy</a>
+                        <a href="#">Contact Us </a>
+                    </div>
+                </div>
+                <div class="footer-grid-box">
+                    <h1 class="footer-card-title">Contact</h1>
+                    <div class="footer-contact-info">
+                        <div class="lct">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>AUPP, Russey Keo, Phnom Penh, Cambodia</p>
+                        </div>
+                        <div class="tel">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+855 67 676 676</p>
+                        </div>
+                        <div class="email">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p>korksombot@gmail.com</p>
+                        </div>
+                        <div class="website">
+                            <i class="fa-solid fa-globe"></i>
+                            <p>www.korksombot.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+        <div class="footer-end">
+                <p>© 2026 KORK SOMBOT. All rights reserved.</p>
+                <p>Made by Navy, Mouy, Davan, Chivorn (AUPP, Summer26 - INFO 250)</p>
+        </div>
+    </main>
+</body>
+</html>
