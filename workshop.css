@@ -1,10 +1,156 @@
 @import url(./variables.css);
+@import url(./style.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-light);
+  color: var(--bg-dark);
+  padding: 10px 90px;
+  font-family: var(--font-main);
+  border-bottom: 1px solid var(--btn-hover);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90px;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  height: 50px;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-red);
+  padding: 8px 12px;
+  border-radius: 8px;
+  i{
+    color: white;
+  }
+}
+
+.nav-links{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  font-family: var(--btn-font);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.nav-links-items{
+  display: flex;
+  gap: 5px;
+  padding: 8px 12px;
+  align-items: center;
+}
+
+.nav-links-items li {
+  list-style: none;
+}
+
+.nav-links-items a {
+  color: var(--bg-dark);
+  text-decoration: none;
+
+  padding: 8px 14px;
+  border-radius: 12px;
+}
+
+.nav-links-items a:hover {
+  background-color: var(--hover-gray);
+  transition: ease-in-out 0.1s;
+}
+
+.nav-links-items a.active{
+  background-color: var(--primary-red);
+  color: var(--text-white);
+}
+
+.nav-right {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: var(--btn-font);
+}
+
+.log-in{
+  color: var(--bg-dark);
+}
+
+.log-in:hover {
+  background-color: var(--primary-red);
+  transition: ease-in-out 0.1s;
+  color: var(--text-white);
+}
+.sign-up {
+  padding: 8px 14px;
+  background-color: var(--primary-red);
+  border-radius: 14px;
+  color: white;
+}
+
+.btn-outline {
+  text-decoration: none;
+  color: var(--bg-dark);
+  padding: 8px 14px;
+  border: 2px solid var(--primary-red);
+  border-radius: 12px;
+
+}
+.btn-outline:hover {
+  background-color: var(--primary-red);
+  color: var(--bg-light);
+}
+
+/* Hamburger is hidden on desktop, only shown below the mobile breakpoint */
+.hamburger{
+  display: none;
+}
+
+#toggle-btn{
+  padding: 20px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  .fa-regular{
+    font-size: 18px;
+  }
+}
 
 .button-container {
     display: flex;
     justify-content: center;
     margin: 40px 0;
-    
+
 }
 
 .show-more-btn {
@@ -36,10 +182,17 @@
     border-color: rgb(116, 7, 7);
 }
 
+.intro-banner{
+  background: #000;
+  width: 100vw;
+  margin-top: 10px;
+}
+
 .wrapper1 {
   padding: 80px;
   width: 100%;
 }
+
 .text1 {
   font-family: var(--primary-font);
 }
@@ -52,7 +205,7 @@
     color: var(--text-white);
 }
 .text1 p {
-    
+
     color: var(--primary-red);
     letter-spacing: 2px;
     font-weight: 600;
@@ -80,68 +233,29 @@
   text-align: center;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-.grid-card {
-  margin-top: 20px;
-  text-align: center;
-  padding: 20px 0;
-  cursor: pointer;
-  h5 {
-    font-size: 15px;
-    margin-bottom: 5px;
-  }
-  p {
-    font-size: 13px;
-  }
-}
-.grid-card .icon {
-  margin: 0 auto;
-  font-size: 1.5em;
-}
-.card1{
-  background-color: var(--text-white);
-  border: 3px solid var(--bg-dark);
-  border-radius: 18px;
-  font-family: var(--btn-font);
-  color: var(--bg-dark);
-  .icon {
-    color: #c8191e;
-    background-color: #fadadf;
-    width: 50px;
-    height: 50px;
-    align-content: center;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-}
-
 .featured-events {
   background-color: var(--text-white);
   padding: 80px;
   color: var(--bg-dark);
   font-family: var(--btn-font);
 }
+
 .grid-ft {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr 1fr 1fr));
     gap: 20px;
     align-items: center;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .grid-card-ft {
   width: auto;
   margin-top: 20px;
   cursor: pointer;
-  /* transition: all 0.2s; */
+  justify-content: center;
 }
 .image {
-  /* tell the browser that any child element with position: absolute
-     should be positioned relative to the edges of this specific box, 
-     not the whole page.*/
   position: relative;
   overflow: hidden;
 }
@@ -150,7 +264,6 @@
   height: 200px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  /* To fit the image nicely */
   object-fit: cover;
   display: block;
   z-index: 0;
@@ -185,7 +298,7 @@
   border-radius: 50%;
   cursor: pointer;
 }
-.image fa-heart {
+.image .fa-heart {
   font-size: 16px;
 }
 .image .price {
@@ -222,6 +335,7 @@
     display: flex;
     gap: 15px;
     width: 300px;
+    max-width: 100%;
     align-items: center;
     margin-bottom: 5px;
     i {
@@ -260,6 +374,7 @@ footer{
 .footer-grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 .footer-grid-box{
   .logo{
@@ -342,3 +457,185 @@ footer{
     font-weight: 500;
 }
 
+.hamburger{
+  display: none;
+}
+
+/* TABLET (<= 900px) */
+@media screen and (max-width: 900px) {
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+  }
+
+  .logo{
+    margin-left: 0;
+  }
+
+  header{
+    width: 100%;
+  }
+
+  .nav-right{
+    margin-right: 0;
+  }
+
+  .intro-banner{
+    margin-top: 40px;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  .nav-links{
+    gap: 4px;
+  }
+
+  .nav-links-items{
+    gap: 0;
+    padding: 0;
+  }
+
+  .nav-links-items a,
+  .nav-right a,
+  .btn-outline{
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+  
+  .grid-ft {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page-wrapper{
+    padding: 1px 13px;
+  }
+
+  .wrapper1{
+    padding: 24px 20px;
+  }
+
+  .featured-events{
+    padding: 40px;
+  }
+
+  .sign-up{
+    width: 90px;
+    text-align: center;
+  }
+
+  footer{
+    padding: 50px 40px;
+  }
+}
+
+/* MOBILE (<= 600px) */
+@media screen and (max-width: 600px) {
+  .grid-ft {
+    grid-template-columns: 1fr;
+  }
+  .grid-card-ft {
+    flex-direction: column;
+  }
+  .card-img{
+    width: 100%;
+    height: 275px;
+  }
+  .page-wrapper{
+    padding: 1px 13px;
+  }
+
+  .nav-right{
+    margin-right: -10px;
+  }
+  .wrapper1{
+    padding: 24px 20px;
+  }
+
+  .featured-events{
+    padding: 30px 16px;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 26px;
+    line-height: 1;
+    color: var(--bg-dark);
+    cursor: pointer;
+    color: #ffffff;
+    background-color: var(--primary-red);
+    border-color: darkred;
+    border-radius: 8px;
+  }
+
+  .intro-banner{
+    margin-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  /* Off-canvas slide-out menu. Hidden by default, shown when .active is toggled */
+  .nav-links{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #000000;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    height: calc(100vh - 90px);
+    overflow: hidden;
+    width: 0;
+    padding: 0;
+    transition: width 0.3s ease-out;
+  }
+  
+  .nav-links.active {
+    width: 220px;
+    padding: 20px;
+  }
+
+  .nav-links-items{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .nav-links-items a,
+  .nav-links .btn-outline{
+    color: var(--text-white);
+    white-space: nowrap;
+  }
+
+  .footer-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer{
+    padding: 40px 30px;
+  }
+
+  .footer-end{
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 30px;
+    text-align: center;
+  }
+
+  .sign-up{
+    width: 90px;
+    text-align: center;
+  }
+}
