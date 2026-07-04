@@ -1,6 +1,9 @@
 @import url("style.css");
-@import url(variables.css);
+@import url("variables.css");
 
+.featured-events{
+  padding-top: 80px;
+}
 /*event detail card*/
 .event-detail-card {
   display: flex;
@@ -136,6 +139,7 @@
   background-color: var(--text-white);
   border: 1px solid var(--btn-hover);
   padding: 14px 20px;
+  
   border-radius: 10px;
   font-weight: 600;
   font-size: 14px;

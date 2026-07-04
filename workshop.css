@@ -1,4 +1,5 @@
 @import url(./variables.css);
+@import url(./style.css);
 
 .button-container {
     display: flex;

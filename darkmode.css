@@ -36,6 +36,12 @@ body.dark {
         background-color: var(--primary-red); 
     }
   }
+  .grid-card:hover{
+    background-color: var(--btn-hover);
+    h5{
+      color: var(--text-white);
+    }
+  }
 /* Dark mode on Featured Events */
   .featured-events{
     background-color: var(--bg-dark);
@@ -53,6 +59,9 @@ body.dark {
         color: var(--text-white);
     }
   }
+  .badge{
+    color: var(--bg-dark);  
+  }
   .btn-banner .browse-btn{
     color: var(--bg-light);
     border: 1px solid #000000;
@@ -60,11 +69,15 @@ body.dark {
   }
   .btn-banner .browse-btn:hover{
     background-color: #000000;
-    color: var(--text-white);
+    color: var(--primary-red);
   }
   .btn-banner .free-btn{
     color: var(--text-white);
     background-color: var(--bg-dark);
+    transition: ease-in 0.2s;
+  }
+  .btn-banner .free-btn:hover{
+    color: var(--primary-red);
   }
 /* Dark Mode on footer */
   footer{
@@ -79,5 +92,41 @@ body.dark {
   }
   .footer-end{
     background-color: var(--bg-dark);
+  }
+  /* Featured Events page */
+  .search-box, .sort-box{
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+  }
+  .wrapper1{
+    background-color: #444141;
+  }
+  .event-detail-card{
+    background-color: #444141;
+  }
+  .ticket-option:hover,
+  .ticket-option.selected {
+    border-color: var(--primary-red);
+    background-color: var(--bg-dark);
+  }
+  .event-detail-actions .save-btn,
+  .event-detail-actions .share-btn {
+    background-color: var(--bg-dark);
+    border: 1px solid var(--btn-hover);
+    padding: 14px 20px;
+    color: var(--bg-light);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+  }
+  .event-detail-actions .save-btn:hover,
+  .event-detail-actions .share-btn:hover {
+    border-color: var(--primary-red);
+    color: var(--primary-red);
   }
 }

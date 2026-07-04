@@ -124,6 +124,9 @@
   .fa-regular{
     font-size: 18px;
   }
+  .fa-sun{
+    color: var(--primary-red);
+  }
 }
 
 /* Hero section */
@@ -266,6 +269,11 @@
     margin: 10px;
     font-size: 13px;
   }
+  transition: ease-in-out 0.2s;
+}
+.grid-card:hover{
+  background-color: var(--primary-red);
+  color: var(--text-white);
 }
 .featured-events {
   background-color: var(--text-white);
@@ -313,8 +321,9 @@
   background-color: #fff;
   padding: 4px 10px;
   border-radius: 8px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .image button {
   position: absolute;
@@ -430,10 +439,10 @@
       cursor: pointer; 
     }
     .free-btn{
-      color: var(--primary-red)
+      color: var(--bg-dark);
     }
     .browse-btn{
-      background-color: var(--hover-gray);
+      background-color: #2c2b2b78;;
       color: var(--text-white);
       border: 1px solid #b3b3b378;
       transition: ease-in 0.2s;
@@ -461,9 +470,10 @@ footer{
     margin-bottom: 10px;
   }
   p{
-    font-family: var(--btn-font);
+    font-family: var(--khmer-font);
+    font-weight: 700;
     font-size: 14px;
-    max-width: 200px;
+    max-width: 300px;
     color: #303030ce;
     margin-bottom: 25px;
   }
