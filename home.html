@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./event.css">
     <link href="https://api.fontshare.com/v2/css?f[]=supreme@400&f[]=technor@600&f[]=archivo@400&f[]=clash-display@600&f[]=clash-grotesk@400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./darkmode.css">
 
@@ -26,13 +27,10 @@
                     <div class="nav-links-items">
                         <li><a href="./home.html">Home</a></li>
                         <li><a href="./events.html">Events</a></li>
-<<<<<<< HEAD
                         <li><a href="./workshop 1.html">Workshops </a></li>
                         <li><a href="./concerts.html">Concerts</a></li>
-=======
                         <li><a href="./workshop.html">Workshops </a></li>
                         <li><a href="#">Concerts</a></li>
->>>>>>> f0be0c133c83697f5381c0ac61801c7f223efaee
                     </div>
                     <a href="/create_events.html" class="btn-outline">Create Event</a>
                 </ul>
@@ -46,6 +44,7 @@
                 </div>
             </div>
             <button id="toggle-btn" class="theme-icon"><i class="fa-regular fa-moon"></i></button>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
         </nav>
     </header>
     <main>
@@ -301,7 +300,12 @@
                     </div>
                 </div>
             </div>
-            
+            <script>//A function to toggle the nav links 
+                function toggleMenu() {
+                    const navLinks = document.querySelector('.nav-links'); 
+                    navLinks.classList.toggle('active');
+                }   
+            </script>
         </footer>
         <div class="footer-end">
                 <p>© 2026 KORK SOMBOT. All rights reserved.</p>

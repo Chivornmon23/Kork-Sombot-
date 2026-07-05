@@ -1,7 +1,5 @@
 @import url(./variables.css);
 @import url(./style.css);
-<<<<<<< HEAD
-=======
 
 * {
   margin: 0;
@@ -133,29 +131,6 @@
   display: none;
 }
 
-#toggle-btn{
-  padding: 20px;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  .fa-regular{
-    font-size: 18px;
-  }
-}
->>>>>>> f0be0c133c83697f5381c0ac61801c7f223efaee
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-
-}
-
 .show-more-btn {
     display: flex;
     flex-direction: column;   /* Stack items vertically */
@@ -171,6 +146,11 @@
     color: white;
     font-family: var(--btn-font);
     width: 100%;
+    margin-top: 20px;
+}
+
+header{
+  margin: 0 auto;
 }
 
 .arrow {
@@ -187,8 +167,8 @@
 
 .intro-banner{
   background: #000;
-  width: 100vw;
-  margin-top: 10px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .wrapper1 {
@@ -238,30 +218,31 @@
 
 .featured-events {
   background-color: var(--text-white);
-  padding: 80px;
   color: var(--bg-dark);
   font-family: var(--btn-font);
+
+  max-width: 5000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 40px;
 }
 
 .grid-ft {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr 1fr 1fr));
-    gap: 20px;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
 }
 
 .grid-card-ft {
-  width: auto;
-  margin-top: 20px;
-  cursor: pointer;
-  justify-content: center;
+    width: 100%;
 }
+
 .image {
   position: relative;
   overflow: hidden;
 }
+
 .image img {
   width: 100%;
   height: 200px;
@@ -272,9 +253,11 @@
   z-index: 0;
   transition: ease-in-out 0.2s;
 }
+
 .image img:hover{
   transform: scale(1.02);
 }
+
 .badge {
   position: absolute;
   top: 10px;
@@ -508,11 +491,11 @@ footer{
   }
   
   .grid-ft {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));;
   }
 
   .footer-grid{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));;
   }
 
   .page-wrapper{
@@ -540,7 +523,7 @@ footer{
 /* MOBILE (<= 600px) */
 @media screen and (max-width: 600px) {
   .grid-ft {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, minmax(0, 1fr));;
   }
   .grid-card-ft {
     flex-direction: column;
@@ -623,7 +606,7 @@ footer{
   }
 
   .footer-grid{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, minmax(0, 1fr));;
   }
 
   footer{

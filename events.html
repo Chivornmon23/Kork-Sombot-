@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./event.css">
     <link href="https://api.fontshare.com/v2/css?f[]=supreme@400&f[]=technor@600&f[]=archivo@400&f[]=clash-display@600&f[]=clash-grotesk@400,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./darkmode.css">
     <title>Kork Sombot</title>
 </head>
@@ -41,6 +41,7 @@
                 </div>
             </div>
             <button id="toggle-btn" class="theme-icon"><i class="fa-regular fa-moon"></i></button>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
         </nav>
     </header>
     <main>
@@ -89,7 +90,7 @@
 
             <div class="grid-ft">
                 <!-- Card 1 -->
-                <div class="grid-card-ft card-1">
+                <div class="grid-card-ft">
                     <div class="image">
                         <img src="https://www.passportsandpreemies.com/wp-content/uploads/2023/10/IMG_6575-1440x960.jpg" alt="">
 
@@ -123,7 +124,7 @@
                     
                 </div>
                 <!-- Card 2 -->
-                 <div class="grid-card-ft card-1">
+                 <div class="grid-card-ft">
                     <div class="image">
                         <img src="https://media.gettyimages.com/id/638650658/photo/festival-fun.jpg?s=612x612&w=0&k=20&c=r3Zb611Q0FDChyt0Zj35sOUOXX8Yl6erINxb8OogPdI=" alt="">
 
@@ -156,7 +157,7 @@
                     
                 </div>
                 <!-- Card 3 -->
-                 <div class="grid-card-ft card-1">
+                 <div class="grid-card-ft">
                     <div class="image">
                         <img src="https://www.aupp.edu.kh/wp-content/uploads/Time-Management-Workshop-02.jpg" alt="">
 
@@ -189,6 +190,7 @@
                 </div>
             </div>
         </section>
+    </main>
 
         <!-- Footer -->
         <footer>
@@ -251,13 +253,18 @@
                     </div>
                 </div>
             </div>
-            
         </footer>
         <div class="footer-end">
-                <p>© 2026 KORK SOMBOT. All rights reserved.</p>
-                <p>By Navy, Mouy, Davan, Chivorn (AUPP, Summer26 - INFO 250)</p>
+            <p>© 2026 KORK SOMBOT. All rights reserved.</p>
+            <p>By Navy, Mouy, Davan, Chivorn (AUPP, Summer26 - INFO 250)</p>
         </div>
-    </main>
+    
+    <script>//A function to toggle the nav links 
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links'); 
+            navLinks.classList.toggle('active');
+        }   
+    </script>
     <script src="./pageActive.js"></script>
     <script src="./darkMode.js"></script>
 </body>
