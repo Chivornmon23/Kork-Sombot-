@@ -1,7 +1,6 @@
-function updatePreview(){
+
     document.getElementById("previewTitle").textContent= document.getElementById("title").value || "--";
     document.getElementById("previewCategory").textContent= document.getElementById("category").value || "--";
-    document.getElementById("previewDescription").textContent= document.getElementById("description").value || "--";
     document.getElementById("previewDate").textContent= document.getElementById("eventDate").value || "--";
     document.getElementById("previewTime").textContent= document.getElementById("eventTime").value || "--";
     document.getElementById("previewVenue").textContent= document.getElementById("venue").value || "--";
