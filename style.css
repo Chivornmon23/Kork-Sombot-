@@ -542,6 +542,7 @@ footer{
     font-family: var(--btn-font);
     font-size: 15px;
     font-weight: 500;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 900px) {

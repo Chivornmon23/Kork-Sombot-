@@ -1,9 +1,32 @@
 @import url(./style.css);
 @import url(./variables.css);
+@import url(./event.css);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    height: 100%;
+}
+
+body {
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+footer {
+    background-color: #000000;
+}
+
+main{
+    flex:1;
 }
 
 .wrapper1 {
@@ -132,7 +155,10 @@ footer{
   background-color: var(--bg-light);
   padding: 80px;
   color: var(--bg-dark);
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
 .footer-grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -217,6 +243,11 @@ footer{
     font-family: var(--btn-font);
     font-size: 15px;
     font-weight: 500;
+    margin-bottom: 0;
+}
+
+.footer-end p {
+    margin: 0;
 }
 
 /* TABLET (<= 900px) */
@@ -356,16 +387,8 @@ footer{
         text-align: center;
     }
 
-    .footer-grid{
-        grid-template-columns: repeat(4, minmax(0, 1fr));;
-    }
-
     .footer-card-title{
         margin-top: 20px;
-    }
-
-    footer{
-        padding: 10px 30px;
     }
 
     .footer-end{
