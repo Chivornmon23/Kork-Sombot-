@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="./workshop.css">
     <!-- <link rel="stylesheet" href="./event.css"> -->
     <link href="https://api.fontshare.com/v2/css?f[]=supreme@400&f[]=technor@600&f[]=archivo@400&f[]=clash-display@600&f[]=clash-grotesk@400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./darkmode.css">
     <title>Kork Sombot</title>
 </head>
 <body>
-    <header >
+    <header>
         <nav class="navbar">
             <div class="logo">
                 <div class="logo-container">
-                     <i class="fa-solid fa-ticket"></i>
+                    <i class="fa-solid fa-ticket"></i>
                 </div>
-                <h1>KORK <br> SOMBOT</h1>
+                <h1>KORK SOMBOT</h1>
             </div>
 
             <div>
@@ -24,8 +25,8 @@
                     <div class="nav-links-items">
                         <li><a href="./home.html">Home</a></li>
                         <li><a href="./events.html">Events</a></li>
-                        <li><a href="./workshop.html">Workshops </a></li>
-                        <li><a href="#">Concerts</a></li>
+                        <li><a href="./Workshop.html">Workshops </a></li>
+                        <li><a href="./concerts.html">Concerts</a></li>
                     </div>
                     <a href="/create_events.html" class="btn-outline">Create Event</a>
                 </ul>
@@ -33,12 +34,13 @@
 
             <div class="nav-right">
                 <a href="#Login" class="log-in">Login</a>
-                <a href="#Signup" class="sign-up">Sign Up</a>
+                <a href=".vscode/sign_up.html" target="_blank" class="sign-up">Sign Up</a>
                 <div class="user-icon">
                     <i class="fa-solid fa-user"></i>
                 </div>
-                <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
             </div>
+            <button id="toggle-btn" class="theme-icon"><i class="fa-regular fa-moon"></i></button>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
         </nav>
     </header>
     <main>
@@ -389,18 +391,19 @@
                     </div>
                 </div>
             </div>
-        <script>//A function to toggle the nav links 
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links'); 
-            navLinks.classList.toggle('active');
-        }   
-        </script>
 
         </footer>
         <div class="footer-end">
                 <p>© 2026 KORK SOMBOT. All rights reserved.</p>
                 <p>Made by Navy, Mouy, Davan, Chivorn (AUPP, Summer26 - INFO 250)</p>
         </div>
-        <script src="./script.js"></script>
+        <script>//A function to toggle the nav links 
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links'); 
+            navLinks.classList.toggle('active');
+        }   
+        </script>
+        <script src="./pageActive.js"></script>
+        <script src="./darkMode.js"></script>
     </body>
 </html>
