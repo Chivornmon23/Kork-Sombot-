@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="./create_events.css">
     <link href="https://api.fontshare.com/v2/css?f[]=supreme@400&f[]=technor@600&f[]=archivo@400&f[]=clash-display@600&f[]=clash-grotesk@400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./darkmode.css">
     <title>Kork Sombot</title>
 </head>
 
 <script src="./create_events.js"></script>
 <body>
     <header>
-         <nav class="navbar">
+        <nav class="navbar">
             <div class="logo">
                 <div class="logo-container">
                      <i class="fa-solid fa-ticket"></i>
@@ -22,10 +24,10 @@
 
             <div>
                 <ul class="nav-links">
-                    <div class="nav-links item">
+                    <div class="nav-links-items">
                         <li><a href="./home.html">Home</a></li>
                         <li><a href="./events.html">Events</a></li>
-                        <li><a href="./workshop.html">Workshops </a></li>
+                        <li><a href="./workshop 1.html">Workshops </a></li>
                         <li><a href="./concerts.html">Concerts</a></li>
                     </div>
                     <a href="/create_events.html" class="btn-outline">Create Event</a>
@@ -33,12 +35,13 @@
             </div>
 
             <div class="nav-right">
-                <a href="#Login">Login</a>
-                <a href=".vscode/sign_up.html" class="btn-bg">Sign Up</a>
+                <a href="#Login" class="log-in">Login</a>
+                <a href=".vscode/sign_up.html" class="sign-up">Sign Up</a>
                 <div class="user-icon">
                     <i class="fa-solid fa-user"></i>
                 </div>
             </div>
+            <button id="toggle-btn" class="theme-icon"><i class="fa-regular fa-moon"></i></button>
         </nav>
     </header>
 
@@ -235,7 +238,7 @@
 
         </section>
 
-         <footer>
+        <footer>
             <div class="footer-grid">
                 <div class="footer-grid-box">
                     <div class="logo">
@@ -244,7 +247,7 @@
                         </div>
                         <h1>KORK SOMBOT</h1>
                     </div>
-                    <p>Cambodia's premier platform for discovering and booking concerts, workshops, festivals, and cultural events.</p>
+                    <p>វេទិកាឈានមុខគេរបស់ប្រទេសកម្ពុជាសម្រាប់ការស្វែងរក និងកក់ការប្រគំតន្ត្រី សិក្ខាសាលា ពិធីបុណ្យ និងព្រឹត្តិការណ៍វប្បធម៌។</p>
                     <div class="social-links">
                         <i class="fa-brands fa-facebook"></i>
                         <i class="fa-brands fa-instagram"></i>
@@ -299,10 +302,11 @@
         </footer>
         <div class="footer-end">
                 <p>© 2026 KORK SOMBOT. All rights reserved.</p>
-                <p>Made by Navy, Mouy, Davan, Chivorn (AUPP, Summer26 - INFO 250)</p>
+                <p>By Navy, Mouy, Davan, Chivorn (AUPP, Summer26 - INFO 250)</p>
         </div>
     </main>
     <script src = "create_events.js"></script>
-    <script src="./script.js"></script>
+    <script src="./pageActive.js"></script>
+    <script src="./darkMode.js"></script>
     </body>
 </html>
