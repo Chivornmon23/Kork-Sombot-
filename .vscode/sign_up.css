@@ -148,3 +148,94 @@ body {
     background: #C8102E;
     transform: translateY(-2px);
 }
+/* TABLET (<= 900px) */
+@media screen and (max-width: 900px) {
+  .panel-left {
+    width: 35%;
+    padding: 40px 35px;
+  }
+
+  .panel-right {
+    width: 65%;
+    padding: 30px;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .hero-copy h2 {
+    font-size: 40px;
+  }
+
+  .hero-copy p {
+    font-size: 15px;
+  }
+
+  .signup-box {
+    max-width: 100%;
+  }
+
+  .signup-box h1 {
+    font-size: 32px;
+  }
+}
+
+/* MOBILE (<= 600px) */
+@media screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  .panel-left {
+    width: 100%;
+    padding: 30px 24px;
+  }
+
+  .panel-right {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .hero-copy {
+    margin-bottom: 0;
+  }
+
+  .hero-copy h2 {
+    font-size: 30px;
+  }
+
+  .hero-copy p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .logo-container {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+
+  .logo h1 {
+    font-size: 22px;
+  }
+
+  .signup-box h1 {
+    font-size: 26px;
+  }
+
+  .signup-text {
+    margin-bottom: 24px;
+  }
+
+  .form-group input {
+    padding: 12px 14px;
+  }
+
+  .signup-button {
+    padding: 14px;
+    font-size: 15px;
+  }
+}
