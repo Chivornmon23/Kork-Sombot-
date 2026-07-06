@@ -19,11 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
     updatePreview(); 
 });
 
-
-    
-
 document.getElementById("publish-btn").addEventListener("click", alertPublish);
 function alertPublish() {
     alert("Your event is in the review process. You will be notified once it is approved and published."); 
 }
 
+//hamburger 
+function toggleMenu() {
+    const menu = document.getElementById("navLinks");
+    const btn = document.getElementById("hamburgerBtn");
+
+    menu.classList.toggle("active");
+
+}
