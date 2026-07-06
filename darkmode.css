@@ -104,6 +104,7 @@ body.dark {
   .event-detail-card{
     background-color: #444141;
   }
+  /* Sign Up  */
   .ticket-option:hover,
   .ticket-option.selected {
     border-color: var(--primary-red);
@@ -157,5 +158,24 @@ body.dark {
   .preview-table td{
     background-color: #8b0000;
     color: var(--text-white);
+  }
+  /* User Login */
+  .container{
+    background-color: var(--bg-dark);
+    border-top: 1px solid var(--bg-light);
+  }
+  .card{
+    background-color: #444141;
+    h1{
+      color: var(--text-white);
+    }
+  }
+  .history-box{
+    background-color: #444141;
+    color: var(--text-white);
+  }
+  .his-event-card:hover{
+    background-color: var(--btn-hover);
+    border: 1px solid var(--bg-light);
   }
 }
