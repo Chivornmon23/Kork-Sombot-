@@ -5,12 +5,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="concerts.css">
     <link rel="stylesheet" href="./event.css">
-
     <link href="https://api.fontshare.com/v2/css?f[]=supreme@400&f[]=technor@600&f[]=archivo@400&f[]=clash-display@600&f[]=clash-grotesk@400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./darkmode.css">
 </head>
 <body>
-        <header>
+    <header>
         <nav class="navbar">
             <div class="logo">
                 <div class="logo-container">
@@ -20,18 +19,18 @@
             </div>
 
             <div>
-                <ul class="nav-links" id="navLinks">
+                <ul class="nav-links">
                     <div class="nav-links-items">
                         <li><a href="./home.html">Home</a></li>
                         <li><a href="./events.html">Events</a></li>
                         <li><a href="./Workshop.html">Workshops </a></li>
                         <li><a href="./concerts.html">Concerts</a></li>
 
-                        <li class="mobile-only"><a href="./login.html">Login</a></li>
+                         <li class="mobile-only"><a href="./login.html">Login</a></li>
                         <li class="mobile-only"><a href="./sign_up.html" target="_blank">Sign Up</a></li>
                         <li class="mobile-only"><a href="./user_page.html"><i class="fa-solid fa-user"></i> Profile</a></li>
                     </div>
-                    <a href="./create_events.html" class="btn-outline">Create Event</a>
+                    <a href="/create_events.html" class="btn-outline">Create Event</a>
                 </ul>
             </div>
 
@@ -45,6 +44,18 @@
         </nav>
     </header>
     <main>
+
+   <section class="intro-banner">
+        <div class="wrapper1">
+            <div class="text1">
+                <p>Live Music</p>
+                <h1 class="heading-text">Concerts & Live Shows</h1>
+            </div>
+            <div>
+                <p class="description">From traditional Khmer music to international acts — experience live music at Cambodia's best venues.</p>
+            </div>
+        </div>
+    </section>
 
 <!--Concert card-->
         <section class="featured-events">
@@ -665,8 +676,13 @@
                 <p>Made by Navy, Mouy, Davan, Chivorn (AUPP, Summer26 - INFO 250)</p>
         </div>
     </main>
+    <script>//A function to toggle the nav links 
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links'); 
+            navLinks.classList.toggle('active');
+        }   
+    </script>
     <script src="./pageActive.js"></script>
     <script src="./darkMode.js"></script>
-    <script src="./hamburger.js"></script>
 </body>
 </html>

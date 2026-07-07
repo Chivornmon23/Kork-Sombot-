@@ -463,8 +463,11 @@ footer {
 
 .hamburger {
     display: none;
-  }
+}
 
+.mobile-only{
+  display: none;
+}
 
 /* TABLET (<= 900px) */
 @media screen and (max-width: 900px) {
@@ -484,7 +487,12 @@ footer {
   }
 
   .nav-right {
+    display: none !important;
     margin-right: 0;
+  }
+
+  .mobile-only{
+    display: block !important;
   }
 
   .intro-banner {
@@ -537,21 +545,24 @@ footer {
   footer {
     padding: 50px 40px;
   }
-}
 
-.hamburger {
-    display: block;
-    font-size: 26px;
-    line-height: 1;
-    color: var(--bg-dark);
+
+  .hamburger {
+    display: flex !important;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background: var(--primary-red);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    color: #ffffff;
-    background-color: var(--primary-red);
-    border-color: darkred;
-    border-radius: 8px;
+    z-index: 9999;
   }
 
-.nav-links {
+  .nav-links {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -566,15 +577,34 @@ footer {
     transition: width 0.3s ease-out;
   }
 
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #000000;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    height: calc(100vh - 90px);
+    overflow-y: auto;   /* was 'hidden' — that's what was clipping content */
+    overflow-x: hidden;
+    width: 0;
+    padding: 0;
+    transition: width 0.3s ease-out;
+    z-index: 999;
+  }
+
   .nav-links.active {
-    width: 220px;
+    width: 240px;
     padding: 20px;
   }
 
   .nav-links-items {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 15px;
     padding: 0;
   }
 
@@ -582,8 +612,10 @@ footer {
   .nav-links .btn-outline {
     color: var(--text-white);
     white-space: nowrap;
+    padding: 6px 8px;
+    font-size: 14px;
   }
-
+}
 /* MOBILE (<= 600px) */
 @media screen and (max-width: 600px) {
   .grid-ft {
