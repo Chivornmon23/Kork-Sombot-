@@ -9,6 +9,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--bg-light);
   color: var(--bg-dark);
   padding: 10px 90px;
@@ -20,7 +21,7 @@
   height: 90px;
   align-items: center;
   width: 100%;
-  z-index: 1;
+  z-index: 1000;
 }
 
 .logo {
@@ -70,12 +71,18 @@
   background-color: var(--primary-red);
   color: var(--text-white);
 }
+
+.mobile-only{
+  display: none;
+}
+
 .nav-right {
   height: 50px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .nav-right a {
   text-decoration: none;
   padding: 8px 14px;
@@ -455,131 +462,76 @@ footer{
 }
 
 
-/* TABLET (<= 900px) */
+/* TABLET & MOBILE (<= 900px) */
 @media screen and (max-width: 900px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 24px;
+
+  .navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
   }
 
-  .logo {
-    margin-left: 0;
+  /* Hide desktop navigation */
+  .nav-right{
+    display:none;
   }
 
-  header {
-    width: 100%;
+  .log-in,
+  .sign-up,
+  .user-icon{
+    display:none !important;
   }
 
-  .nav-right {
-    margin-right: 0;
+  /* Show mobile menu items */
+  .mobile-only{
+    display:block;
+    width:100%;
   }
 
-  .create-hero {
-    padding: 120px 8% 60px;
-  }
-
-  .create-hero h1 {
-    font-size: 2.8rem;
-  }
-
-  .nav-links {
-    gap: 4px;
-  }
-
-  .nav-links-items {
-    gap: 0;
-    padding: 0;
-  }
-
-  .nav-links-items a,
-  .nav-right a,
-  .btn-outline {
-    padding: 6px 8px;
-    font-size: 14px;
-  }
-
-  .form-card {
-    padding: 32px;
-  }
-
-  fieldset {
-    padding: 20px;
-  }
-
-  .preview-table {
-    width: 92%;
-  }
-
-  .footer-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .sign-up {
-    width: 90px;
-    text-align: center;
-  }
-
-  footer {
-    padding: 50px 40px;
-  }
-}
-
-/* MOBILE (<= 600px) */
-@media screen and (max-width: 600px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 16px;
-  }
-
-  .nav-right {
-    margin-right: -10px;
-  }
-
-  .nav-right a[href='./login.html'] {
-    display: none;
-  }
-
+  /* Show hamburger */
   .hamburger {
-    display: block;
-    font-size: 26px;
-    line-height: 1;
+    display: flex !important;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background: var(--primary-red);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    color: #ffffff;
-    background-color: var(--primary-red);
-    border-color: darkred;
-    border-radius: 8px;
+    z-index: 9999;
   }
 
-  /* Off-canvas slide-out menu. Hidden by default, shown when .active is toggled */
-  .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: #000000;
-    position: fixed;
-    top: 90px;
-    left: 0;
-    height: calc(100vh - 90px);
-    overflow: hidden;
-    width: 0;
-    padding: 0;
-    transition: width 0.3s ease-out;
+  /* Side menu */
+  .nav-links{
+    display:flex;
+    flex-direction:column;
+    position:fixed;
+    top:90px;
+    left:0;
+    width:0;
+    height:calc(100vh - 90px);
+    overflow:hidden;
+    background:#000;
+    padding:0;
+    transition:width .3s ease;
+    z-index: 999;
   }
 
-  .nav-links.active {
-    width: 220px;
-    padding: 20px;
+  .nav-links.active{
+    width:220px;
+    padding:20px;
   }
 
-  .nav-links-items {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 0;
+  .nav-links-items{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+    width:100%;
   }
 
   .nav-links-items a,
@@ -588,84 +540,29 @@ footer{
     white-space: nowrap;
   }
 
-  .create-hero {
-    padding: 120px 6% 55px;
-    text-align: center;
+  .nav-links-items a i{
+    margin-right:8px;
   }
 
-  .create-hero .description {
-    max-width: 100%;
-    margin: 0 auto;
+  .btn-outline{
+    margin-top:15px;
   }
 
-  .create-hero h1 {
-    font-size: 2.1rem;
+  .create-hero{
+    padding:120px 8% 60px;
+    text-align:center;
   }
 
-  .subtitle {
-    font-size: 1rem;
+  .form-card{
+    width:94%;
   }
 
-  .create-event {
-    padding: 40px 0;
+  .preview-table{
+    width:100%;
   }
 
-  .form-card {
-    width: 94%;
-    padding: 24px;
-    border-radius: 14px;
+  .footer-grid{
+    grid-template-columns:repeat(2,1fr);
   }
 
-  .form-card h2 {
-    font-size: 1.5rem;
-  }
-
-  legend {
-    font-size: 1.05rem;
-  }
-
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    padding: 12px 14px;
-  }
-
-  .preview-table {
-    width: 100%;
-  }
-
-  .preview-table th {
-    width: auto;
-    padding: 12px;
-    font-size: .9rem;
-  }
-
-  .preview-table td {
-    padding: 12px;
-    font-size: .9rem;
-  }
-
-  button, .publish-btn {
-    width: 100%;
-    padding: 16px 20px;
-  }
-
-  footer {
-    padding: 40px 30px;
-  }
-
-  .footer-grid {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
-  .footer-grid-box p {
-    max-width: 100%;
-  }
-
-  .footer-end {
-    flex-direction: column;
-    gap: 8px;
-    padding: 20px 30px;
-    text-align: center;
-  }
 }

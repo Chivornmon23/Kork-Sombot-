@@ -4,6 +4,15 @@
 .featured-events{
   padding-top: 80px;
 }
+
+.hamburger{
+  display: none;
+}
+
+.nav-links{
+  display: flex;
+
+}
 /*event detail card*/
 .event-detail-card {
   display: flex;
@@ -189,4 +198,134 @@
     transform: translateY(-2px);
     color: rgb(116, 7, 7);
     border-color: rgb(116, 7, 7);
+}
+
+/* =======================
+   TABLET (<= 900px)
+======================= */
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  /* hide right login section */
+  .nav-right {
+    display: none;
+  }
+
+  /* hamburger SHOW */
+  .hamburger {
+    display: flex !important;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background: var(--primary-red);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+
+  /* nav menu becomes dropdown style */
+  .nav-links {
+    display: flex;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 0;
+    height: calc(100vh - 90px);
+    overflow: hidden;
+    background: var(--bg-light);
+    flex-direction: column;
+    transition: 0.3s ease;
+    padding: 0;
+  }
+
+  .nav-links.active {
+    width: 240px;
+    padding: 20px;
+  }
+
+  .nav-links-items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .mobile-only{
+    display: block;
+  }
+
+  /* EVENT CARD (your previous one stays) */
+  .event-detail-card {
+    flex-direction: column;
+  }
+
+  .event-detail-image {
+    width: 100%;
+    height: 220px;
+  }
+
+  .event-detail-content {
+    padding: 20px;
+  }
+}
+
+
+/* =======================
+   PHONE (<= 600px)
+======================= */
+@media (max-width: 600px) {
+
+
+  .nav-links.active{
+    width: 100%;
+  }
+  .hamburger {
+    font-size: 24px;
+  }
+
+  .event-detail-image {
+    height: 180px;
+  }
+
+  .event-detail-content {
+    padding: 16px;
+  }
+
+  .event-detail-content .event-title {
+    font-size: 1.2rem;
+  }
+
+  .status-badge {
+    position: static;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .ticket-options {
+    flex-direction: column;
+  }
+
+  .ticket-option {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .event-detail-actions {
+    flex-direction: column;
+  }
+
+  .event-detail-actions button {
+    width: 100%;
+  }
+
+  .show-more-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
 }
