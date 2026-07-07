@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./event.css">
     <link href="https://api.fontshare.com/v2/css?f[]=supreme@400&f[]=technor@600&f[]=archivo@400&f[]=clash-display@600&f[]=clash-grotesk@400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./darkmode.css">
-    <link rel="stylesheet" href="./style.css">
     <title>Kork Sombot</title>
 </head>
 <body>
@@ -22,23 +21,25 @@
             </div>
 
             <div>
-                <ul class="nav-links">
+                <ul class="nav-links" id="navLinks">
                     <div class="nav-links-items">
                         <li><a href="./home.html">Home</a></li>
                         <li><a href="./events.html">Events</a></li>
                         <li><a href="./workshop 1.html">Workshops </a></li>
                         <li><a href="./concerts.html">Concerts</a></li>
+
+                        <li class="mobile-only"><a href="./login.html">Login</a></li>
+                        <li class="mobile-only"><a href="./sign_up.html" target="_blank">Sign Up</a></li>
+                        <li class="mobile-only"><a href="./user_page.html"><i class="fa-solid fa-user"></i> Profile</a></li>
                     </div>
-                    <a href="/create_events.html" class="btn-outline">Create Event</a>
+                    <a href="./create_events.html" class="btn-outline">Create Event</a>
                 </ul>
             </div>
 
             <div class="nav-right">
                 <a href="./login.html" class="log-in">Login</a>
                 <a href="./sign_up.html" class="sign-up">Sign Up</a>
-                <div class="user-icon">
-                    <i class="fa-solid fa-user"></i>
-                </div>
+                <button class="user-icon"><a href="./user_page.html"><i class="fa-solid fa-user"></i></a></button>
             </div>
             <button id="toggle-btn" class="theme-icon"><i class="fa-regular fa-moon"></i></button>
             <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
@@ -401,5 +402,6 @@
         </div>
         <script src="./pageActive.js"></script>
         <script src="./darkMode.js"></script>
+        <script src="./hamburger.js"></script>
     </body>
 </html>
