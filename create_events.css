@@ -150,6 +150,7 @@ body {
   line-height: 1.6;
 }
 .subtitle{
+  font-family: var(--primary-font);
   font-size: 1.2rem;
   color: var(--primary-red);
   margin-bottom: 20px;
