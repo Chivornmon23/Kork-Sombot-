@@ -1,17 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./event.css">
-    <link href="https://api.fontshare.com/v2/css?f[]=supreme@400&f[]=technor@600&f[]=archivo@400&f[]=clash-display@600&f[]=clash-grotesk@400,600&display=swap" rel="stylesheet">
+    <link
+        href="https://api.fontshare.com/v2/css?f[]=supreme@400&f[]=technor@600&f[]=archivo@400&f[]=clash-display@600&f[]=clash-grotesk@400,600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./darkmode.css">
+    <link rel="stylesheet" href="./user_page.css">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
     <title>Kork Sombot</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -51,137 +55,116 @@
 
         <!-- Intro Banner -->
         <section class="intro-banner">
-            <div class="wrapper1">
-                <div class="text1">
-                    <p>ALL EVENTS</p>
-                    <h1 class="heading-text">Upcoming Events in Cambodia</h1>
+            <div class="wrapper-box">
+                <div class="box-left">
+                    <div class="user-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="user-info">
+                        <h1>SOPHEA MEAS</h1>
+                        <p class="member-detail">sophea.meas@email.com · Member since 1967</p>
+                        <div class="info">
+                            <p>12 Events Attended</p>
+                            <p>3 Saved</p>
+                            <p class="verified">Verified</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div>
-                    <p class="description">Discover concerts, festivals, workshops, and more happening across Cambodia.</p>
+
+                <div class="box-right">
+                    <button>Edit Profile</button>
+                    <button><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
                 </div>
             </div>
-            
         </section>
-
-        <!-- FEATURED EVENTS -->
-
-        <section class="featured-events">
-            <div class="search-bar">
-
-                <div class="search-box">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" class="search-box" placeholder="Search by events, locations...">
+        <section class="container">
+            <div class="grid-box">
+                <div class="card">
+                    <i class="fa-solid fa-ticket"></i>
+                    <h1>$667</h1>
+                    <p>Total Spent</p>
                 </div>
-                
-                <select class="sort-box">
-                    <option>Sort by Date</option>
-                    <option>Newest</option>
-                    <option>Oldest</option>
-                </select>
+
+                <div class="card">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <h1>67</h1>
+                    <p>Events Attended</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-calendar"></i>
+                    <h1>6</h1>
+                    <p>Upcoming</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-star"></i>
+                    <h1>7</h1>
+                    <p>Reviews Given</p>
+                </div>
             </div>
-            <!-- Categories -->
-             <div class="category">
-                <div><p>All</p></div>
-                <div><p>Concert</p></div>
-                <div><p>Festival</p></div>
-                <div><p>Workshop</p></div>
-                <div><p>Exhibition</p></div>
-                <div><p>Sports</p></div>
-                
-             </div>
-             <p class="result_status">3 events found</p>
 
-            <div class="grid-ft">
-                <!-- Card 1 -->
-                <div class="grid-card-ft">
-                    <div class="image">
-                        <img src="https://www.passportsandpreemies.com/wp-content/uploads/2023/10/IMG_6575-1440x960.jpg" alt="">
-
-                            <p class="badge">concert</p>
-                            <button><i class="fa-regular fa-heart"></i></button>
-                            <p class="price">45$</p>
-                    </div>
-                    <div class="content">
-                        <p class="title">Angkor Wat Sunrise Concert</p>
-                        <div class="info">
-                            <div class="date">
-                                <i class="fa-regular fa-calendar"></i>
-                                <p>July 15, 2026</p>
-                            </div>
-                            <div class="location">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <p>Angkor Wat, Siem Reap</p>
-                            </div>
-                            <div class="seat">
-                                <i class="fa-solid fa-ticket"></i>
-                                <p>320 seats available</p>
-                            </div>
-                            <button class="book-btn">Book Now</button>
+            <div class="history-box">
+                <div class="box-header">
+                    <div class="active"><i class="fa-solid fa-ticket"></i> My Bookings</div>
+                    <div><i class="fa-solid fa-heart"></i> Saved Events</div>
+                    <div><i class="fa-solid fa-mobile-screen-button"></i> Digital Tickets</div>
+                    <div><i class="fa-solid fa-gear"></i>Setting</div>
+                </div>
+                <div class="box-body">
+                    <div class="box-body-title">
+                        <h1>Booking History</h1>
+                        <div>
+                            <button class="upcoming">Upcoming</button>
+                            <button>Past</button>
                         </div>
                     </div>
-                    
-                    
-                </div>
-                <!-- Card 2 -->
-                 <div class="grid-card-ft">
-                    <div class="image">
-                        <img src="https://media.gettyimages.com/id/638650658/photo/festival-fun.jpg?s=612x612&w=0&k=20&c=r3Zb611Q0FDChyt0Zj35sOUOXX8Yl6erINxb8OogPdI=" alt="">
-
-                            <p class="badge">festival</p>
-                            <button><i class="fa-regular fa-heart"></i></button>
-                            <p class="price">25$</p>
-                    </div>
-                    <div class="content">
-                        <p class="title">Phnom Penh Music Festival</p>
-                        <div class="info">
-                            <div class="date">
-                                <i class="fa-regular fa-calendar"></i>
-                                <p>July 16, 2026</p>
+                    <div class="history-event-grid">
+                        <div class="his-event-card">
+                            <div class="box-left">
+                                <h1>Khmer Arts Gala 2024</h1>
+                                <p>Dec 5, 2024 · Premium · 2 tickets</p>
                             </div>
-                            <div class="location">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <p>Phnom Penh, Cambodia</p>
+                            <div class="box-right">
+                                <p>$60</p>
+                                <button class="upcoming">Upcoming</button>
                             </div>
-                            <div class="seat">
-                                <i class="fa-solid fa-ticket"></i>
-                                <p>367 seats available</p>
-                            </div>
-                            <button class="book-btn">Book Now</button>
                         </div>
-                    </div>
-                    
-                </div>
-                <!-- Card 3 -->
-                 <div class="grid-card-ft">
-                    <div class="image">
-                        <img src="https://www.aupp.edu.kh/wp-content/uploads/Time-Management-Workshop-02.jpg" alt="">
-
-                            <p class="badge">workshop</p>
-                            <button><i class="fa-regular fa-heart"></i></button>
-                            <p class="price">67$</p>
-                    </div>
-                    <div class="content">
-                        <p class="title">AUPP Workshop</p>
-                        <div class="info">
-                            <div class="date">
-                                <i class="fa-regular fa-calendar"></i>
-                                <p>July 17, 2026</p>
+                        <div class="his-event-card">
+                            <div class="box-left">
+                                <h1>Angkor Wat Sunrise Concert</h1>
+                                <p>July 15, 2025 · General · 2 tickets</p>
                             </div>
-                            <div class="location">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <p>AUPP, Phnom Penh</p>
+                            <div class="box-right">
+                                <p>$90</p>
+                                <button class="upcoming">Upcoming</button>
                             </div>
-                            <div class="seat">
-                                <i class="fa-solid fa-ticket"></i>
-                                <p>367 seats available</p>
+                        </div>
+                        <div class="his-event-card">
+                            <div class="box-left">
+                                <h1>Phnom Penh Jazz Festival</h1>
+                                <p>Aug 3–5, 2025 · VIP · 1 ticket</p>
                             </div>
-                            <button class="book-btn">Book Now</button>
+                            <div class="box-right">
+                                <p>$75</p>
+                                <button class="past">Past</button>
+                            </div>
+                        </div>
+                        <div class="his-event-card">
+                            <div class="box-left">
+                                <h1>Tech Summit Cambodia 2024</h1>
+                                <p>Oct 12, 2024 · Standard · 1 ticket</p>
+                            </div>
+                            <div class="box-right">
+                                <p>$80</p>
+                                <button class="past">Past</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 
         <!-- Footer -->
         <footer>
@@ -193,7 +176,8 @@
                         </div>
                         <h1>KORK SOMBOT</h1>
                     </div>
-                    <p>វេទិកាឈានមុខគេរបស់ប្រទេសកម្ពុជាសម្រាប់ការស្វែងរក និងកក់ការប្រគំតន្ត្រី សិក្ខាសាលា ពិធីបុណ្យ និងព្រឹត្តិការណ៍វប្បធម៌។</p>
+                    <p>វេទិកាឈានមុខគេរបស់ប្រទេសកម្ពុជាសម្រាប់ការស្វែងរក និងកក់ការប្រគំតន្ត្រី សិក្ខាសាលា ពិធីបុណ្យ
+                        និងព្រឹត្តិការណ៍វប្បធម៌។</p>
                     <div class="social-links">
                         <i class="fa-brands fa-facebook"></i>
                         <i class="fa-brands fa-instagram"></i>
@@ -258,6 +242,6 @@
     </script>
     <script src="./pageActive.js"></script>
     <script src="./darkMode.js"></script>
-    <script src="./hamburger.js"></script>
 </body>
+
 </html>

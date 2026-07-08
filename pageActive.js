@@ -10,4 +10,5 @@
     if (link.getAttribute('href').includes(currentPage)) {
       link.classList.add('active');
     }
-  });
+  }); 
+
