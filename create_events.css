@@ -156,10 +156,10 @@ body {
   margin-bottom: 20px;
 }
 .create-hero{
-  background: #444141;
-  color: var(--bg-dark);
+  background: #000;
+  color: white;
   padding: 140px 12% 80px;
-  border-bottom: 2px solid var(--primary-red);
+  border-bottom: 2px;
 }
 .create-hero h1{
   font-family: var(--primary-font);
